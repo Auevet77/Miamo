@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "579746b4-2916-48a7-8ac5-9c114c87cbe2": {
+      "ProjectGuid": "579746b4-2916-48a7-8ac5-9c114c87cbe2",
+      "DisplayName": "Miamo.DTO",
+      "ColorIndex": 0
+    },
+    "452a5cac-a808-41ef-bb79-a2c7bae7e377": {
+      "ProjectGuid": "452a5cac-a808-41ef-bb79-a2c7bae7e377",
+      "DisplayName": "Miamo.DAL",
+      "ColorIndex": 1
+    },
+    "abf49412-5702-4636-9fde-1d94f9774d27": {
+      "ProjectGuid": "abf49412-5702-4636-9fde-1d94f9774d27",
+      "DisplayName": "Miamo.SITE",
+      "ColorIndex": 2
+    },
+    "71c97876-c5d6-4b42-a7a6-50b1e631dff5": {
+      "ProjectGuid": "71c97876-c5d6-4b42-a7a6-50b1e631dff5",
+      "DisplayName": "Miamo.UI",
+      "ColorIndex": 3
+    },
+    "8e85ad8a-c29e-48ab-8dd2-4a5ccc886a12": {
+      "ProjectGuid": "8e85ad8a-c29e-48ab-8dd2-4a5ccc886a12",
+      "DisplayName": "Miamo.API",
+      "ColorIndex": 4
+    },
+    "dcfbdbc0-109d-4834-ba0a-408bf06e548e": {
+      "ProjectGuid": "dcfbdbc0-109d-4834-ba0a-408bf06e548e",
+      "DisplayName": "Miamo.BLL",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
