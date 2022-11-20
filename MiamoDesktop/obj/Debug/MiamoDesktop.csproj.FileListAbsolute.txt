@@ -1,0 +1,13 @@
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.csproj.AssemblyReference.cache
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.Properties.Resources.resources
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.csproj.GenerateResource.cache
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.csproj.CoreCompileInputs.cache
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.Cadastrar.resources
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.Editar.resources
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.Listar.resources
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.Login.resources
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.MainAdm.resources
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.MainUser.resources
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.Relatorio.resources
+C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.SplashScreen.resources

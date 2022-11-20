@@ -1,0 +1,2 @@
+C:\Users\Romilson\source\repos\Miamo\Miamo.API\obj\Debug\Miamo.API.csproj.AssemblyReference.cache
+C:\Users\Romilson\source\repos\Miamo\Miamo.API\obj\Debug\Miamo.API.csproj.CoreCompileInputs.cache

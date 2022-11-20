@@ -19,7 +19,7 @@ namespace Miamo.DAL
         {
             try
             {
-                conn = new SqlConnection("Server=tcp:miamo.database.windows.net,1433;Initial Catalog=MiamoDesktopDB;Persist Security Info=False;User ID=administrador;Password=Admin@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MiamoDesktopDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
                 conn.Open();
             }
             catch (Exception ex)
