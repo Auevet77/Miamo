@@ -37,7 +37,7 @@ namespace MiamoDesktop
         private GroupBox gBox3;
         private GroupBox gBox1;
         private Label label1;
-        private object txtFKTpUsuario;
+        private object txtFTpUsuario;
 
         public Editar()
         {
@@ -416,11 +416,11 @@ namespace MiamoDesktop
             //atribuindo valor radio buttons
             if (rb1.Checked)
             {
-                objPesquisa.FKTpUsuario = 1;
+                objPesquisa.TpUsuario = "1";
             }
             else if (rb2.Checked)
             {
-                objPesquisa.FKTpUsuario = 2;
+                objPesquisa.TpUsuario = "2";
             }
 
             

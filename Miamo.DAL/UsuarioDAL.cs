@@ -17,11 +17,11 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("INSERT INTO Usuario (NomeUsuario,SenhaUsuario,EmailUsuario,FKTpUsuario) VALUES (@v1,@v2,@v3,@v4)", conn);
+                cmd = new SqlCommand("INSERT INTO Usuario (NomeUsuario,SenhaUsuario,EmailUsuario,TpUsuario) VALUES (@v1,@v2,@v3,@v4)", conn);
                 cmd.Parameters.AddWithValue("@v1", objCad.NomeUsuario);
                 cmd.Parameters.AddWithValue("@v2", objCad.SenhaUsuario);
                 cmd.Parameters.AddWithValue("@v3", objCad.EmailUsuario);
-                cmd.Parameters.AddWithValue("@v4", objCad.FKTpUsuario);
+                cmd.Parameters.AddWithValue("@v4", objCad.TpUsuario);
 
                 cmd.ExecuteNonQuery();
 
@@ -78,11 +78,11 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("UPDATE Usuario SET NomeUsuario=@v1,SenhaUsuario=@v2,EmailUsuario=@v3,FKTpUsuario=@v4 WHERE IdUsuario=@v5", conn);
+                cmd = new SqlCommand("UPDATE Usuario SET NomeUsuario=@v1,SenhaUsuario=@v2,EmailUsuario=@v3,TpUsuario=@v4 WHERE IdUsuario=@v5", conn);
                 cmd.Parameters.AddWithValue("@v1", objEdita.NomeUsuario);
                 cmd.Parameters.AddWithValue("@v2", objEdita.SenhaUsuario);
                 cmd.Parameters.AddWithValue("@v3", objEdita.EmailUsuario);
-                cmd.Parameters.AddWithValue("@v4", objEdita.FKTpUsuario);
+                cmd.Parameters.AddWithValue("@v4", objEdita.TpUsuario);
                 cmd.Parameters.AddWithValue("@v5", objEdita.IdUsuario);
                 cmd.ExecuteNonQuery();
             }
@@ -125,7 +125,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT NomeUsuario, SenhaUsuario, FKTpUsuario FROM Usuario WHERE NomeUsuario=@v1 AND SenhaUSuario=@v2", conn);
+                cmd = new SqlCommand("SELECT NomeUsuario, SenhaUsuario, TpUsuario FROM Usuario WHERE NomeUsuario=@v1 AND SenhaUSuario=@v2", conn);
                 cmd.Parameters.AddWithValue("@v1", objNome);
                 cmd.Parameters.AddWithValue("@v2", objSenha);
                 dr = cmd.ExecuteReader();
@@ -136,7 +136,7 @@ namespace Miamo.DAL
                     obj = new UsuarioAutenticaDTO();
                     obj.NomeUsuario = dr["NomeUsuario"].ToString();
                     obj.SenhaUsuario = dr["SenhaUsuario"].ToString();
-                    obj.FKTpUsuario = dr["FKTpUsuario"].ToString();
+                    obj.TpUsuario = dr["FKTpUsuario"].ToString();
                 }
                 return obj;
             }

@@ -38,7 +38,7 @@ namespace MiamoDesktop
                 objModelo = objValida.AutenticarUser(objUser, objSenha);
                 if (objModelo!= null)
                 {
-                    switch (objModelo.FKTpUsuario)
+                    switch (objModelo.TpUsuario)
                     {
                         case "1":
                             Session.nomeUsuario = txtUsuario.Text.Trim();
