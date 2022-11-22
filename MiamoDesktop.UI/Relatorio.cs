@@ -23,7 +23,7 @@ namespace MiamoDesktop
             // 
             // Relatorio
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(726, 398);
             this.Name = "Relatorio";
             this.Load += new System.EventHandler(this.Relatorio_Load);
             this.ResumeLayout(false);

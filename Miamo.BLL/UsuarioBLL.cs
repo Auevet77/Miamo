@@ -44,5 +44,9 @@ namespace Miamo.BLL
             return objBLL.Autenticar(objNome, objSenha);
         }
 
+        public UsuarioListDTO SelecionarUsuario(int selecionar)
+        {
+            return objBLL.Selecionar(selecionar);
+        }
     }
 }

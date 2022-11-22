@@ -152,6 +152,39 @@ namespace Miamo.DAL
 
         }
 
+        public UsuarioListDTO Selecionar(int idUsuario)
+        {
+            try
+            {
+                Conectar();
+                cmd = new SqlCommand("SELECT * FROM Usuario", conn); //Alterar string assim que o banco tiver pronto--- sqlCommand Invalido
+                cmd.Parameters.AddWithValue("@v1", idUsuario);
+                dr = cmd.ExecuteReader();
+
+                UsuarioListDTO obj = new UsuarioListDTO();
+
+                while (dr.Read())
+                {
+                    obj = new UsuarioListDTO();
+                    obj.IdUsuario = Convert.ToInt32(dr["IdUsuario"]);
+                    obj.NomeUsuario = dr["NomeUsuario"].ToString();
+                    obj.EmailUsuario = dr["EmailUsuario"].ToString();
+                    obj.DescricaoTpUsuario = dr["DescricaoTpUsuario"].ToString(); ;
+                    
+                }
+
+                return obj;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao selecionar Usuario! " + ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
 
     }
 }
