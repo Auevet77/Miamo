@@ -52,5 +52,8 @@
     <Compile Include="UsuarioDTO.cs" />
     <Compile Include="UsuarioListDTO.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTOS\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

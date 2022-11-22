@@ -157,7 +157,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT * FROM Usuario", conn); //Alterar string assim que o banco tiver pronto--- sqlCommand Invalido
+                cmd = new SqlCommand("SELECT IdUsuario,NomeUsuario,SenhaUsuario,EmailUsuario,DescricaoTpUsuario FROM Usuario JOIN TpUsuario ON DescricaoTpUsuario=IdTpUsuario", conn);
                 cmd.Parameters.AddWithValue("@v1", idUsuario);
                 dr = cmd.ExecuteReader();
 
