@@ -17,7 +17,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("INSERT INTO Usuario (NomeUsuario,SenhaUsuario,EmailUsuario,TpUsuario) VALUES (@v1,@v2,@v3,@v4)", conn);
+                cmd = new SqlCommand("INSERT INTO Usuario (NomeUsuario,SenhaUsuario,EmailUsuario,IdTpUsuario) VALUES (@v1,@v2,@v3,@v4)", conn);
                 cmd.Parameters.AddWithValue("@v1", objCad.NomeUsuario);
                 cmd.Parameters.AddWithValue("@v2", objCad.SenhaUsuario);
                 cmd.Parameters.AddWithValue("@v3", objCad.EmailUsuario);
