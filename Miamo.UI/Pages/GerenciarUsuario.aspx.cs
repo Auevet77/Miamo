@@ -44,7 +44,7 @@ namespace Miamo.UI.Pages
                 objModelo.NomeUsuario = (gv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).Text.Trim();
                 objModelo.SenhaUsuario = (gv1.FooterRow.FindControl("txtSenhaUsuarioFooter") as TextBox).Text.Trim();
                 objModelo.EmailUsuario = (gv1.FooterRow.FindControl("txtEmailUsuarioFooter") as TextBox).Text.Trim();
-                objModelo.FKTpUsuario = (gv1.FooterRow.FindControl("rbl1") as RadioButtonList).Text.Trim();
+                objModelo.TpUsuario = (gv1.FooterRow.FindControl("rbl1") as RadioButtonList).Text.Trim();
 
                 objBLL.CadastraUsuario(objModelo);
                 PopularGV();
@@ -58,7 +58,7 @@ namespace Miamo.UI.Pages
             objModelo.NomeUsuario = (gv1.Rows[e.RowIndex].FindControl("txtNomeUsuario") as TextBox).Text.Trim();
             objModelo.SenhaUsuario = (gv1.Rows[e.RowIndex].FindControl("txtSenhaUsuario") as TextBox).Text.Trim();
             objModelo.EmailUsuario = (gv1.Rows[e.RowIndex].FindControl("txtEmailUsuario") as TextBox).Text.Trim();
-            objModelo.FKTpUsuario = (gv1.Rows[e.RowIndex].FindControl("rbl1") as RadioButtonList).Text.Trim();
+            objModelo.TpUsuario = (gv1.Rows[e.RowIndex].FindControl("rbl1") as RadioButtonList).Text.Trim();
             objModelo.IdUsuario = Convert.ToInt32(gv1.DataKeys[e.RowIndex].Value.ToString());
             objBLL.EditarUsuario(objModelo);
             gv1.EditIndex = -1;

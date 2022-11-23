@@ -42,7 +42,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT Id_Produto,NomeProduto,DescricaoProduto,TamanhoProduto,CorProduto,PrecoProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto = IdCategoria", conn);
+                cmd = new SqlCommand("SELECT IdProduto, NomeProduto , DescricaoProduto , TamanhoProduto , CorProduto , PrecoProduto , NomeCategoria FROM Produto JOIN CategoriaProduto ON IdCategoriaProduto = IdCategoria", conn);
                 dr = cmd.ExecuteReader();
                 List<ProdutoListDTO> Lista = new List<ProdutoListDTO>();
                 while (dr.Read())
@@ -53,8 +53,7 @@ namespace Miamo.DAL
                     obj.DescricaoProduto = dr["DescricaoProduto"].ToString();
                     obj.TamanhoProduto = dr["TamanhoProduto"].ToString();
                     obj.PrecoProduto = dr["PrecoProduto"].ToString();
-                    obj.CorProduto = dr["CorProduto"].ToString();
-                    
+                    obj.CorProduto = dr["CorProduto"].ToString();                    
                     obj.CategoriaProduto = dr["NomeCategoria"].ToString();
 
                     Lista.Add(obj);
@@ -164,7 +163,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto =IdCategoria WHERE FKCategoriaProduto = @v1", conn);
+                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN CategoriaProduto ON IdCategoriaProduto =IdCategoria WHERE IdCategoriaProduto = @v1", conn);
                 cmd.Parameters.AddWithValue("@v1", IdCategoria);
 
                 dr = cmd.ExecuteReader();

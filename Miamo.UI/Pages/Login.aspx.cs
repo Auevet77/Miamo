@@ -33,12 +33,12 @@ namespace Miamo.UI.Pages
             UsuarioAutenticaDTO objModelo = new UsuarioAutenticaDTO();
             UsuarioBLL objAutentica = new UsuarioBLL();
             objModelo = objAutentica.AutenticarUser(objNome, objSenha);
-            if (objModelo != null && objModelo.FKTpUsuario == "1")
+            if (objModelo != null && objModelo.TpUsuario == "1")
             {
                 Session["Usuario"] = txtUser.Text.Trim();
                 Response.Redirect("GerenciarUsuario.aspx");
             }
-            else if (objModelo != null && objModelo.FKTpUsuario == "2")
+            else if (objModelo != null && objModelo.TpUsuario == "2")
             {
                 lblMensagem.Text = "Você não tem privilégios para esta operação !!!";
                 Limpar();

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace MiamoDesktop
 {
     public partial class Editar : Form
     {
+        private const int V = 1;
         private GroupBox gBox2;
         private RadioButton rb1;
         private RadioButton rb2;
@@ -35,6 +37,7 @@ namespace MiamoDesktop
         private GroupBox gBox3;
         private GroupBox gBox1;
         private Label label1;
+        private object txtFTpUsuario;
 
         public Editar()
         {
@@ -148,6 +151,7 @@ namespace MiamoDesktop
             this.btnExcluir.TabIndex = 16;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // txtEmail
             // 
@@ -244,6 +248,7 @@ namespace MiamoDesktop
             this.btnConfirmar.TabIndex = 21;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // label6
             // 
@@ -351,11 +356,12 @@ namespace MiamoDesktop
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            gBox1.Visible = gBox3.Enabled = true;
+            gBox1.Visible = true;
+            gBox3.Enabled = true;
 
             //checando preenchimento do campo Id
             int codigo;
-            if(!int.TryParse(txtId.Text, out codigo))
+            if (!int.TryParse(txtId.Text, out codigo))
             {
                 Limpar();
                 MessageBox.Show("Digite o Id do usuario!!");
@@ -370,6 +376,75 @@ namespace MiamoDesktop
             UsuarioBLL objPesqBLL = new UsuarioBLL();//metodo
             objPesquisa = objPesqBLL.SelecionarUsuario(codigo);
 
+            if (objPesquisa != null)
+            {
+
+                //habilitando componentes
+                txtNome.Text = objPesquisa.NomeUsuario;
+                txtSenha.Text = objPesquisa.SenhaUsuario;
+                txtEmail.Text = objPesquisa.EmailUsuario;
+               
+
+
+
+            }
+            else
+            {
+                Limpar();
+                MessageBox.Show("Não rolou a busca !!!");
+                return;
+            }
+
+        }
+
+        //CONFIRMAR
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            UsuarioDTO objPesquisa = new UsuarioDTO();//Modelo
+            UsuarioBLL objPesqBLL =new UsuarioBLL();//Modelo
+            objPesquisa.IdUsuario = Convert.ToInt32(txtId.Text);
+            objPesquisa.NomeUsuario = txtNome.Text;
+            objPesquisa.SenhaUsuario = txtSenha.Text;
+
+            //alertando radio buttons não selecionados
+            if ((!rb1.Checked) && !rb2.Checked)
+            {
+                MessageBox.Show("Escolha uma opção!!");
+                return;
+            }
+
+            //atribuindo valor radio buttons
+            if (rb1.Checked)
+            {
+                objPesquisa.TpUsuario = "1";
+            }
+            else if (rb2.Checked)
+            {
+                objPesquisa.TpUsuario = "2";
+            }
+
+            
+
+           
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("Deseja mesmo eliminar o registro?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            //manipulando o valor escolhido mo messagebox
+            if (msg != DialogResult.Yes)
+            {
+                UsuarioBLL objExcluiBLL = new UsuarioBLL();//metodo
+                int codigo = Convert.ToInt32(txtId.Text);
+                objExcluiBLL.ExcluirUsuario(codigo);
+                Limpar();
+            }
+            else if (msg == DialogResult.No)
+            {
+                Limpar();
+            }
         }
     }
 }

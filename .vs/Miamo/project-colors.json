@@ -30,7 +30,17 @@
       "ProjectGuid": "dcfbdbc0-109d-4834-ba0a-408bf06e548e",
       "DisplayName": "Miamo.BLL",
       "ColorIndex": 5
+    },
+    "6f0b91ed-749d-44f6-85ff-3f9afbad6f33": {
+      "ProjectGuid": "6f0b91ed-749d-44f6-85ff-3f9afbad6f33",
+      "DisplayName": "MiamoDesktop.UI",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

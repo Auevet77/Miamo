@@ -219,3 +219,8 @@ GO
 -- drop table Usuario
 
 -- drop database MiamoDesktopDB
+
+
+Select id_usuario,Nome,TipoUsuario,Senha,LoginUsuario,id_tpUsuario from Usuario Join tpUsuario on TipoUsuario=id_tpUsuario
+
+Select * from tpUsuario

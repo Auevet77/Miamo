@@ -16,7 +16,7 @@ namespace Miamo.DTO
 
         public string EmailUsuario { get; set; }
 
-        public string FKTpUsuario { get; set; }
+        public string TpUsuario { get; set; }
 
     }
 }

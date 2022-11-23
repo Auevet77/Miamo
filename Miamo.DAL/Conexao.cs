@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Configuration;
+using System.Data.SqlClient;//
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,9 @@ namespace Miamo.DAL
         {
             try
             {
-                conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MiamoDesktopDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                //string connectionString = ConfigurationManager.ConnectionStrings["MiamoConnectionString"].ConnectionString;
+
+                conn = new SqlConnection("Server=tcp:miamo.database.windows.net,1433;Initial Catalog=MiamoDesktopDB;Persist Security Info=False;User ID=administrador;Password=Admin@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
                 conn.Open();
             }
             catch (Exception ex)

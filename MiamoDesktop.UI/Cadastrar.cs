@@ -48,11 +48,11 @@ namespace MiamoDesktop
 
             if (rb1.Checked)
             {
-                objCAD.FKTpUsuario = "1";
+                objCAD.TpUsuario = "1";
             }
             else if (rb2.Checked)
             {
-                objCAD.FKTpUsuario = "2";
+                objCAD.TpUsuario = "2";
             }
             
             UsuarioBLL objCadastra = new UsuarioBLL();
