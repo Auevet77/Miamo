@@ -44,7 +44,7 @@ namespace MiamoDesktop
 
             objCAD.NomeUsuario = txtNome.Text;
             objCAD.SenhaUsuario = txtSenha.Text;
-            objCAD.EmailUsuario = txtSenha.Text;
+            objCAD.EmailUsuario = txtEmail.Text;
 
             if (rb1.Checked)
             {

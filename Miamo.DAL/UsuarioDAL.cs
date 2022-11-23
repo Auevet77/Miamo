@@ -125,7 +125,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT NomeUsuario, SenhaUsuario, TpUsuario FROM Usuario WHERE NomeUsuario=@v1 AND SenhaUSuario=@v2", conn);
+                cmd = new SqlCommand("SELECT NomeUsuario, SenhaUsuario, IdTpUsuario FROM Usuario WHERE NomeUsuario=@v1 AND SenhaUSuario=@v2", conn);
                 cmd.Parameters.AddWithValue("@v1", objNome);
                 cmd.Parameters.AddWithValue("@v2", objSenha);
                 dr = cmd.ExecuteReader();
@@ -136,7 +136,7 @@ namespace Miamo.DAL
                     obj = new UsuarioAutenticaDTO();
                     obj.NomeUsuario = dr["NomeUsuario"].ToString();
                     obj.SenhaUsuario = dr["SenhaUsuario"].ToString();
-                    obj.TpUsuario = dr["FKTpUsuario"].ToString();
+                    obj.TpUsuario = dr["IdTpUsuario"].ToString();
                 }
                 return obj;
             }
@@ -157,19 +157,20 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdUsuario,NomeUsuario,SenhaUsuario,EmailUsuario,DescricaoTpUsuario FROM Usuario JOIN TpUsuario ON DescricaoTpUsuario=IdTpUsuario", conn);
+                cmd = new SqlCommand("SELECT IdUsuario,NomeUsuario,SenhaUsuario,EmailUsuario,DescricaoTpUsuario FROM Usuario AS Usu JOIN TpUsuario AS TipoUsuario ON Usu.IdTpUsuario = TipoUsuario.IdTpUsuario WHERE IdUsuario=@v1", conn);
                 cmd.Parameters.AddWithValue("@v1", idUsuario);
                 dr = cmd.ExecuteReader();
 
                 UsuarioListDTO obj = new UsuarioListDTO();
 
-                while (dr.Read())
+                if (dr.Read())
                 {
                     obj = new UsuarioListDTO();
                     obj.IdUsuario = Convert.ToInt32(dr["IdUsuario"]);
                     obj.NomeUsuario = dr["NomeUsuario"].ToString();
+                    obj.SenhaUsuario = dr["SenhaUsuario"].ToString();
                     obj.EmailUsuario = dr["EmailUsuario"].ToString();
-                    obj.DescricaoTpUsuario = dr["DescricaoTpUsuario"].ToString(); ;
+                    obj.DescricaoTpUsuario = dr["DescricaoTpUsuario"].ToString();
                     
                 }
 
