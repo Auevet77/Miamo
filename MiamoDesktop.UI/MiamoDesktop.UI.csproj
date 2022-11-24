@@ -78,6 +78,18 @@
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.Designer.cs">
+      <DependentUpon>CadastrarCategoriaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormsProduto\CadastrarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebFormsProduto\CadastrarProduto.Designer.cs">
+      <DependentUpon>CadastrarProduto.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +123,12 @@
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.resx">
+      <DependentUpon>CadastrarCategoriaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebFormsProduto\CadastrarProduto.resx">
+      <DependentUpon>CadastrarProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -134,8 +152,6 @@
       <Name>Miamo.DTO</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="WebFormsProduto\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

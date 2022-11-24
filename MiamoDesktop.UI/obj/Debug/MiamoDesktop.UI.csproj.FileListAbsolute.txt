@@ -98,3 +98,5 @@ C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoD
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.csproj.CopyComplete
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.exe
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.pdb
+C:\Users\romilson.gmonteiro\source\repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsProduto.CadastrarCategoriaProduto.resources
+C:\Users\romilson.gmonteiro\source\repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsProduto.CadastrarProduto.resources
