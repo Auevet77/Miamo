@@ -15,10 +15,11 @@ namespace Miamo.DTO
         public string PrecoProduto { get; set; }
         public string CorProduto { get; set; }
         public string UrlImagemProduto { get; set; }
-        public string CategoriaProduto { get; set; }
+        public string IdCategoriaProduto { get; set; }
+        public string IdFornecedor { get; set; }
 
         //relacionamento
-        public string FKCategoriaProduto { get; set; }
+        //public string FKCategoriaProduto { get; set; }
 
     }
 }

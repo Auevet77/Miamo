@@ -1,5 +1,6 @@
 ﻿using Miamo.BLL;
 using Miamo.DTO;
+using System.IO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +23,8 @@ namespace MiamoDesktop.UI.WebFormsProduto
 
         public void Limpar()
         {
-            txtNomeProduto.Text = txtDescricaoProduto.Text = txtTamanhoProduto.Text = txtPrecoProduto.Text = txtCorProduto.Text = txtImagemProduto.Text = txtCategoriaProduto.Text = txtFornecedorProduto.Text = string.Empty;
+            txtNomeProduto.Text = txtDescricaoProduto.Text = txtTamanhoProduto.Text = txtPrecoProduto.Text = txtCorProduto.Text = txtCategoriaProduto.Text = txtFornecedorProduto.Text = string.Empty;
+            picBox1.Image = null;
             //rb1.Checked = false; rb2.Checked = false;
             txtNomeProduto.Focus();
         }
@@ -45,16 +47,40 @@ namespace MiamoDesktop.UI.WebFormsProduto
             objCAD.DescricaoProduto = txtDescricaoProduto.Text;
             objCAD.TamanhoProduto = txtTamanhoProduto.Text;
             objCAD.PrecoProduto = txtPrecoProduto.Text;
-            objCAD.CorProduto = txtCorProduto.Text;
-            objCAD.UrlImagemProduto = txtImagemProduto.Text;
-            objCAD.CategoriaProduto = txtCategoriaProduto.Text;
-            
+            objCAD.CorProduto = txtCorProduto.Text;            
+            objCAD.IdCategoriaProduto = txtCategoriaProduto.Text;
+            objCAD.IdFornecedor = txtFornecedorProduto.Text;
+
+            //salvando a URL da imagem
+            string nomeImg = txtNomeProduto.Text + ".jpg";
+            string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo1\Miamo.UI\Img";
+            string caminhoImg = Path.Combine(pasta, nomeImg);
+            objCAD.UrlImagemProduto = caminhoImg;
+
+            //salvando na pasta
+            Image a = picBox1.Image;
+            a.Save(caminhoImg);
+
+
             ProdutoBLL objCadastra = new ProdutoBLL();
             objCadastra.CadastraProduto(objCAD);
             Limpar();
 
             MessageBox.Show("Produto " + objCAD.NomeProduto + " cadastrado com sucesso!!");
 
+        }
+
+        //carregar imagem
+        private void btnImagem_Click(object sender, EventArgs e)
+        {
+            //carregando imagem
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "jpg files(*.jpg)|*.jpg|PNG files(*.png)|*.png|All Files(*.*)|*.*";
+            if (dialog.ShowDialog()== DialogResult.OK)
+            {
+                string img = dialog.FileName.ToString();
+                picBox1.ImageLocation = img;
+            }
         }
     }
 }
