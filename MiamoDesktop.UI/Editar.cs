@@ -376,7 +376,7 @@ namespace MiamoDesktop
             UsuarioBLL objPesqBLL = new UsuarioBLL();//metodo
             objPesquisa = objPesqBLL.SelecionarUsuario(codigo);
 
-            if (objPesquisa != null)
+            if (objPesquisa.NomeUsuario != null)
             {
 
                 //habilitando componentes
@@ -406,6 +406,7 @@ namespace MiamoDesktop
             objPesquisa.IdUsuario = Convert.ToInt32(txtId.Text);
             objPesquisa.NomeUsuario = txtNome.Text;
             objPesquisa.SenhaUsuario = txtSenha.Text;
+            objPesquisa.EmailUsuario = txtEmail.Text;
 
             //alertando radio buttons não selecionados
             if ((!rb1.Checked) && !rb2.Checked)
@@ -424,7 +425,9 @@ namespace MiamoDesktop
                 objPesquisa.TpUsuario = "2";
             }
 
-            
+            objPesqBLL.EditarUsuario(objPesquisa);
+            Limpar();
+            MessageBox.Show("Usuário editado com sucesso!!");
 
            
 
@@ -435,7 +438,7 @@ namespace MiamoDesktop
             DialogResult msg = MessageBox.Show("Deseja mesmo eliminar o registro?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             //manipulando o valor escolhido mo messagebox
-            if (msg != DialogResult.Yes)
+            if (msg == DialogResult.Yes)
             {
                 UsuarioBLL objExcluiBLL = new UsuarioBLL();//metodo
                 int codigo = Convert.ToInt32(txtId.Text);

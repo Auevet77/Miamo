@@ -78,7 +78,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("UPDATE Usuario SET NomeUsuario=@v1,SenhaUsuario=@v2,EmailUsuario=@v3,TpUsuario=@v4 WHERE IdUsuario=@v5", conn);
+                cmd = new SqlCommand("UPDATE Usuario SET NomeUsuario=@v1,SenhaUsuario=@v2,EmailUsuario=@v3,IdTpUsuario=@v4 WHERE IdUsuario=@v5", conn);
                 cmd.Parameters.AddWithValue("@v1", objEdita.NomeUsuario);
                 cmd.Parameters.AddWithValue("@v2", objEdita.SenhaUsuario);
                 cmd.Parameters.AddWithValue("@v3", objEdita.EmailUsuario);
