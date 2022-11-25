@@ -84,6 +84,12 @@
     <Compile Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.Designer.cs">
       <DependentUpon>CadastrarCategoriaProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebFormsCategoriaProduto\EditarCategoriaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebFormsCategoriaProduto\EditarCategoriaProduto.Designer.cs">
+      <DependentUpon>EditarCategoriaProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebFormsProduto\CadastrarProduto.cs">
       <SubType>Form</SubType>
     </Compile>

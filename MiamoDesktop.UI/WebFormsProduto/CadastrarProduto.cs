@@ -23,7 +23,8 @@ namespace MiamoDesktop.UI.WebFormsProduto
 
         public void Limpar()
         {
-            txtNomeProduto.Text = txtDescricaoProduto.Text = txtTamanhoProduto.Text = txtPrecoProduto.Text = txtCorProduto.Text = txtCategoriaProduto.Text = txtFornecedorProduto.Text = string.Empty;
+            txtNomeProduto.Text = txtDescricaoProduto.Text = txtTamanhoProduto.Text = txtPrecoProduto.Text = txtCorProduto.Text = txtFornecedorProduto.Text = string.Empty;
+            cboCategoria.Text = "";
             picBox1.Image = null;
             //rb1.Checked = false; rb2.Checked = false;
             txtNomeProduto.Focus();
@@ -48,7 +49,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
             objCAD.TamanhoProduto = txtTamanhoProduto.Text;
             objCAD.PrecoProduto = txtPrecoProduto.Text;
             objCAD.CorProduto = txtCorProduto.Text;            
-            objCAD.IdCategoriaProduto = txtCategoriaProduto.Text;
+            objCAD.IdCategoriaProduto = cboCategoria.SelectedValue.ToString();
             objCAD.IdFornecedor = txtFornecedorProduto.Text;
 
             //salvando a URL da imagem
@@ -81,6 +82,20 @@ namespace MiamoDesktop.UI.WebFormsProduto
                 string img = dialog.FileName.ToString();
                 picBox1.ImageLocation = img;
             }
+        }
+
+        private void CadastrarProduto_Load(object sender, EventArgs e)
+        {
+            
+            CategoriaBLL objCadastra = new CategoriaBLL();
+
+            List<CategoriaDTO> listarCategoria = objCadastra.ListarCategoria();
+            
+            cboCategoria.DataSource = listarCategoria;
+            cboCategoria.DisplayMember= "NomeCategoria";
+            cboCategoria.ValueMember = "IdCategoria";
+            cboCategoria.Text = "";
+            
         }
     }
 }

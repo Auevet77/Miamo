@@ -40,7 +40,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtCorProduto = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtCategoriaProduto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtFornecedorProduto = new System.Windows.Forms.TextBox();
             this.btnSair = new System.Windows.Forms.Button();
@@ -48,6 +47,7 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.picBox1 = new System.Windows.Forms.PictureBox();
             this.btnImagem = new System.Windows.Forms.Button();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,13 +163,6 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Categoria";
             // 
-            // txtCategoriaProduto
-            // 
-            this.txtCategoriaProduto.Location = new System.Drawing.Point(86, 458);
-            this.txtCategoriaProduto.Name = "txtCategoriaProduto";
-            this.txtCategoriaProduto.Size = new System.Drawing.Size(381, 20);
-            this.txtCategoriaProduto.TabIndex = 7;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -245,12 +238,22 @@
             this.btnImagem.UseVisualStyleBackColor = true;
             this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
             // 
+            // cboCategoria
+            // 
+            this.cboCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(87, 458);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(380, 28);
+            this.cboCategoria.TabIndex = 14;
+            // 
             // CadastrarProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.Controls.Add(this.cboCategoria);
             this.Controls.Add(this.btnImagem);
             this.Controls.Add(this.picBox1);
             this.Controls.Add(this.btnSair);
@@ -258,7 +261,6 @@
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtFornecedorProduto);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtCategoriaProduto);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCorProduto);
             this.Controls.Add(this.label6);
@@ -275,6 +277,7 @@
             this.Name = "CadastrarProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastrarProduto";
+            this.Load += new System.EventHandler(this.CadastrarProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -295,7 +298,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCorProduto;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCategoriaProduto;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtFornecedorProduto;
         private System.Windows.Forms.Button btnSair;
@@ -303,5 +305,6 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.PictureBox picBox1;
         private System.Windows.Forms.Button btnImagem;
+        private System.Windows.Forms.ComboBox cboCategoria;
     }
 }
