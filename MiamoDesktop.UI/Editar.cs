@@ -298,7 +298,7 @@ namespace MiamoDesktop
             // 
             // Editar
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.gBox1);
             this.Controls.Add(this.gBox3);
@@ -384,9 +384,6 @@ namespace MiamoDesktop
                 txtSenha.Text = objPesquisa.SenhaUsuario;
                 txtEmail.Text = objPesquisa.EmailUsuario;
                 txtTpUsuario.Text = objPesquisa.DescricaoTpUsuario;
-
-
-
 
             }
             else

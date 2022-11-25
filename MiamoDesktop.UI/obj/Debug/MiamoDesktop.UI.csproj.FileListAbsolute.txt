@@ -100,3 +100,4 @@ C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoD
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.pdb
 C:\Users\romilson.gmonteiro\source\repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsProduto.CadastrarCategoriaProduto.resources
 C:\Users\romilson.gmonteiro\source\repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsProduto.CadastrarProduto.resources
+C:\Users\romilson.gmonteiro\source\repos\Miamo1\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsCategoriaProduto.EditarCategoria.resources

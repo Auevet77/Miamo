@@ -1,6 +1,0 @@
-C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\Miamo.DesktopTeste.csproj.AssemblyReference.cache
-C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\Miamo.DesktopTeste.csproj.SuggestedBindingRedirects.cache
-C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.Login.resources
-C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\MiamoDesktop.Properties.Resources.resources
-C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\Miamo.DesktopTeste.csproj.GenerateResource.cache
-C:\Users\Romilson\source\repos\Miamo\MiamoDesktop\obj\Debug\Miamo.DesktopTeste.csproj.CoreCompileInputs.cache
