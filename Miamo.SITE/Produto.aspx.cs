@@ -24,7 +24,7 @@ namespace Miamo.SITE
             lblPreco.Text = produtoDTO.PrecoProduto;
             lblCor.Text = produtoDTO.CorProduto;
             lblCategoriaProduto.Text = produtoDTO.CategoriaProduto;
-            lblDescricao.Text = "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.Detraxit consequat et quo num tendi nada.Per aumento de cachacis, eu reclamis.Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!";
+            lblDescricao.Text = produtoDTO.DescricaoProduto;
             imgProduto.ImageUrl = produtoDTO.UrlImagemProduto.Replace("~", ".");
 
         }

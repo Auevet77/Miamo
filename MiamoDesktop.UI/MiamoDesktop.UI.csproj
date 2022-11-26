@@ -86,11 +86,11 @@
     <Compile Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.Designer.cs">
       <DependentUpon>CadastrarCategoriaProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="WebFormsCategoriaProduto\EditarCategoriaProduto.cs">
+    <Compile Include="WebFormsCategoriaProduto\EditarCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WebFormsCategoriaProduto\EditarCategoriaProduto.Designer.cs">
-      <DependentUpon>EditarCategoriaProduto.cs</DependentUpon>
+    <Compile Include="WebFormsCategoriaProduto\EditarCategoria.Designer.cs">
+      <DependentUpon>EditarCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="WebFormsProduto\CadastrarProduto.cs">
       <SubType>Form</SubType>
@@ -134,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.resx">
       <DependentUpon>CadastrarCategoriaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebFormsCategoriaProduto\EditarCategoria.resx">
+      <DependentUpon>EditarCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WebFormsProduto\CadastrarProduto.resx">
       <DependentUpon>CadastrarProduto.cs</DependentUpon>

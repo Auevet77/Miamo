@@ -23,12 +23,12 @@
         <div class="p-5 mb-2 bg-light text-dark row">
             <asp:Image ID="imgProduto" runat="server" CssClass="float-left pr-3" />
             <div class="text-sm-start">
-                <p><b>Produto:</b><asp:Label ID="lblNome" runat="server"></asp:Label></p>
-                <p><b>Tamanho:</b><asp:Label ID="lblTamanho" runat="server"></asp:Label></p>
-                <p><b>Preço:</b><asp:Label ID="lblPreco" runat="server"></asp:Label></p>
-                <p><b>Cor:</b><asp:Label ID="lblCor" runat="server"></asp:Label></p>
-                <p><b>Categoria:</b><asp:Label ID="lblCategoriaProduto" runat="server"></asp:Label></p>
-                <p><b>Descrição:</b><asp:Label ID="lblDescricao" runat="server"></asp:Label></p>
+                <p><b>Produto: </b><asp:Label ID="lblNome" runat="server"></asp:Label></p>
+                <p><b>Tamanho: </b><asp:Label ID="lblTamanho" runat="server"></asp:Label></p>
+                <p><b>Preço: </b><asp:Label ID="lblPreco" runat="server"></asp:Label></p>
+                <p><b>Cor: </b><asp:Label ID="lblCor" runat="server"></asp:Label></p>
+                <p><b>Categoria: </b><asp:Label ID="lblCategoriaProduto" runat="server"></asp:Label></p>
+                <p><b>Descrição: </b><asp:Label ID="lblDescricao" runat="server"></asp:Label></p>
             </div>
         </div>
     </div>

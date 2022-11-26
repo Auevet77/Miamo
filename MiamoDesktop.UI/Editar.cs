@@ -76,7 +76,7 @@ namespace MiamoDesktop
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(197, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(590, 73);
@@ -88,7 +88,6 @@ namespace MiamoDesktop
             this.gBox2.Controls.Add(this.rb1);
             this.gBox2.Controls.Add(this.rb2);
             this.gBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBox2.ForeColor = System.Drawing.Color.White;
             this.gBox2.Location = new System.Drawing.Point(486, 89);
             this.gBox2.Name = "gBox2";
             this.gBox2.Size = new System.Drawing.Size(243, 155);
@@ -99,7 +98,6 @@ namespace MiamoDesktop
             // rb1
             // 
             this.rb1.AutoSize = true;
-            this.rb1.ForeColor = System.Drawing.Color.Black;
             this.rb1.Location = new System.Drawing.Point(51, 38);
             this.rb1.Name = "rb1";
             this.rb1.Size = new System.Drawing.Size(128, 25);
@@ -111,7 +109,6 @@ namespace MiamoDesktop
             // rb2
             // 
             this.rb2.AutoSize = true;
-            this.rb2.ForeColor = System.Drawing.Color.Black;
             this.rb2.Location = new System.Drawing.Point(51, 89);
             this.rb2.Name = "rb2";
             this.rb2.Size = new System.Drawing.Size(76, 25);
@@ -124,9 +121,9 @@ namespace MiamoDesktop
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.Red;
-            this.btnSair.Location = new System.Drawing.Point(529, 122);
+            this.btnSair.Location = new System.Drawing.Point(599, 107);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(87, 30);
+            this.btnSair.Size = new System.Drawing.Size(87, 41);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -135,8 +132,8 @@ namespace MiamoDesktop
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(376, 29);
+            this.btnCancelar.ForeColor = System.Drawing.Color.Blue;
+            this.btnCancelar.Location = new System.Drawing.Point(371, 32);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 41);
             this.btnCancelar.TabIndex = 12;
@@ -147,8 +144,8 @@ namespace MiamoDesktop
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ForeColor = System.Drawing.Color.Red;
-            this.btnExcluir.Location = new System.Drawing.Point(30, 29);
+            this.btnExcluir.ForeColor = System.Drawing.Color.Blue;
+            this.btnExcluir.Location = new System.Drawing.Point(25, 32);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(107, 41);
             this.btnExcluir.TabIndex = 10;
@@ -158,14 +155,14 @@ namespace MiamoDesktop
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(24, 224);
+            this.txtEmail.Location = new System.Drawing.Point(24, 197);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(381, 20);
             this.txtEmail.TabIndex = 6;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(24, 144);
+            this.txtSenha.Location = new System.Drawing.Point(24, 128);
             this.txtSenha.MaxLength = 6;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(381, 20);
@@ -173,7 +170,7 @@ namespace MiamoDesktop
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(24, 64);
+            this.txtNome.Location = new System.Drawing.Point(24, 56);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(381, 20);
             this.txtNome.TabIndex = 4;
@@ -183,7 +180,7 @@ namespace MiamoDesktop
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(19, 196);
+            this.label4.Location = new System.Drawing.Point(19, 169);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 11;
@@ -194,7 +191,7 @@ namespace MiamoDesktop
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(19, 116);
+            this.label3.Location = new System.Drawing.Point(19, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 25);
             this.label3.TabIndex = 12;
@@ -205,7 +202,7 @@ namespace MiamoDesktop
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(19, 36);
+            this.label2.Location = new System.Drawing.Point(19, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 25);
             this.label2.TabIndex = 13;
@@ -216,7 +213,7 @@ namespace MiamoDesktop
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(128, 100);
+            this.label5.Location = new System.Drawing.Point(146, 100);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 25);
             this.label5.TabIndex = 13;
@@ -224,7 +221,7 @@ namespace MiamoDesktop
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(133, 128);
+            this.txtId.Location = new System.Drawing.Point(151, 128);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(153, 20);
             this.txtId.TabIndex = 1;
@@ -232,10 +229,10 @@ namespace MiamoDesktop
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
-            this.btnPesquisar.Location = new System.Drawing.Point(379, 122);
+            this.btnPesquisar.ForeColor = System.Drawing.Color.Blue;
+            this.btnPesquisar.Location = new System.Drawing.Point(413, 107);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(107, 30);
+            this.btnPesquisar.Size = new System.Drawing.Size(107, 41);
             this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -244,8 +241,8 @@ namespace MiamoDesktop
             // btnConfirmar
             // 
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirmar.Location = new System.Drawing.Point(198, 29);
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Blue;
+            this.btnConfirmar.Location = new System.Drawing.Point(193, 32);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(107, 41);
             this.btnConfirmar.TabIndex = 11;
@@ -258,7 +255,7 @@ namespace MiamoDesktop
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(19, 276);
+            this.label6.Location = new System.Drawing.Point(19, 237);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(164, 25);
             this.label6.TabIndex = 11;
@@ -266,7 +263,7 @@ namespace MiamoDesktop
             // 
             // txtTpUsuario
             // 
-            this.txtTpUsuario.Location = new System.Drawing.Point(24, 304);
+            this.txtTpUsuario.Location = new System.Drawing.Point(24, 265);
             this.txtTpUsuario.Name = "txtTpUsuario";
             this.txtTpUsuario.Size = new System.Drawing.Size(381, 20);
             this.txtTpUsuario.TabIndex = 7;
@@ -276,9 +273,9 @@ namespace MiamoDesktop
             this.gBox3.Controls.Add(this.btnExcluir);
             this.gBox3.Controls.Add(this.btnConfirmar);
             this.gBox3.Controls.Add(this.btnCancelar);
-            this.gBox3.Location = new System.Drawing.Point(233, 547);
+            this.gBox3.Location = new System.Drawing.Point(233, 485);
             this.gBox3.Name = "gBox3";
-            this.gBox3.Size = new System.Drawing.Size(513, 94);
+            this.gBox3.Size = new System.Drawing.Size(513, 100);
             this.gBox3.TabIndex = 22;
             this.gBox3.TabStop = false;
             // 
@@ -295,14 +292,14 @@ namespace MiamoDesktop
             this.gBox1.Controls.Add(this.txtEmail);
             this.gBox1.Location = new System.Drawing.Point(133, 181);
             this.gBox1.Name = "gBox1";
-            this.gBox1.Size = new System.Drawing.Size(803, 361);
+            this.gBox1.Size = new System.Drawing.Size(803, 298);
             this.gBox1.TabIndex = 23;
             this.gBox1.TabStop = false;
             // 
             // Editar
             // 
-            this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(1000, 736);
+            this.BackColor = System.Drawing.Color.Aqua;
+            this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.gBox1);
             this.Controls.Add(this.gBox3);
             this.Controls.Add(this.btnPesquisar);
@@ -387,9 +384,6 @@ namespace MiamoDesktop
                 txtSenha.Text = objPesquisa.SenhaUsuario;
                 txtEmail.Text = objPesquisa.EmailUsuario;
                 txtTpUsuario.Text = objPesquisa.DescricaoTpUsuario;
-
-
-
 
             }
             else
