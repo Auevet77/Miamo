@@ -76,12 +76,13 @@ namespace MiamoDesktop
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(197, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(590, 73);
             this.label1.TabIndex = 1;
             this.label1.Text = "EDITAR USUÁRIO";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // gBox2
             // 
@@ -132,7 +133,7 @@ namespace MiamoDesktop
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Blue;
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Location = new System.Drawing.Point(371, 32);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 41);
@@ -144,7 +145,7 @@ namespace MiamoDesktop
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ForeColor = System.Drawing.Color.Blue;
+            this.btnExcluir.ForeColor = System.Drawing.Color.Red;
             this.btnExcluir.Location = new System.Drawing.Point(25, 32);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(107, 41);
@@ -229,7 +230,7 @@ namespace MiamoDesktop
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.ForeColor = System.Drawing.Color.Blue;
+            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
             this.btnPesquisar.Location = new System.Drawing.Point(413, 107);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(107, 41);
@@ -241,7 +242,7 @@ namespace MiamoDesktop
             // btnConfirmar
             // 
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Blue;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
             this.btnConfirmar.Location = new System.Drawing.Point(193, 32);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(107, 41);
@@ -273,9 +274,9 @@ namespace MiamoDesktop
             this.gBox3.Controls.Add(this.btnExcluir);
             this.gBox3.Controls.Add(this.btnConfirmar);
             this.gBox3.Controls.Add(this.btnCancelar);
-            this.gBox3.Location = new System.Drawing.Point(233, 485);
+            this.gBox3.Location = new System.Drawing.Point(233, 529);
             this.gBox3.Name = "gBox3";
-            this.gBox3.Size = new System.Drawing.Size(513, 100);
+            this.gBox3.Size = new System.Drawing.Size(513, 105);
             this.gBox3.TabIndex = 22;
             this.gBox3.TabStop = false;
             // 
@@ -295,10 +296,11 @@ namespace MiamoDesktop
             this.gBox1.Size = new System.Drawing.Size(803, 298);
             this.gBox1.TabIndex = 23;
             this.gBox1.TabStop = false;
+            this.gBox1.Enter += new System.EventHandler(this.gBox1_Enter);
             // 
             // Editar
             // 
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.gBox1);
             this.Controls.Add(this.gBox3);
@@ -446,6 +448,16 @@ namespace MiamoDesktop
             {
                 Limpar();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
