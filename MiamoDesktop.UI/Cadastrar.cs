@@ -62,5 +62,40 @@ namespace MiamoDesktop
             MessageBox.Show("Usuário " + objCAD.NomeUsuario + " cadastrado com sucesso!!");
             
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cadastrar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

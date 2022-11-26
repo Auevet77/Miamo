@@ -48,9 +48,11 @@
   <ItemGroup>
     <Compile Include="Cadastrar.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Cadastrar.designer.cs">
       <DependentUpon>Cadastrar.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Editar.cs">
       <SubType>Form</SubType>
@@ -98,6 +100,7 @@
     </Compile>
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Editar.resx">
       <DependentUpon>Editar.cs</DependentUpon>

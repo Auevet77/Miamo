@@ -41,20 +41,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(97, 31);
+            this.label1.Location = new System.Drawing.Point(216, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(405, 73);
+            this.label1.Size = new System.Drawing.Size(546, 73);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Autenticação";
+            this.label1.Text = "AUTENTICAÇAO";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(91, 158);
+            this.label2.Location = new System.Drawing.Point(287, 223);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 37);
             this.label2.TabIndex = 0;
@@ -65,7 +66,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(91, 252);
+            this.label3.Location = new System.Drawing.Point(287, 339);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 37);
             this.label3.TabIndex = 0;
@@ -73,7 +74,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(98, 198);
+            this.txtUsuario.Location = new System.Drawing.Point(294, 263);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(362, 20);
             this.txtUsuario.TabIndex = 1;
@@ -81,8 +82,8 @@
             // btnEntrar
             // 
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnEntrar.Location = new System.Drawing.Point(98, 349);
+            this.btnEntrar.ForeColor = System.Drawing.Color.Black;
+            this.btnEntrar.Location = new System.Drawing.Point(293, 459);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(91, 33);
             this.btnEntrar.TabIndex = 3;
@@ -93,8 +94,8 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCancelar.Location = new System.Drawing.Point(246, 349);
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Location = new System.Drawing.Point(441, 459);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(87, 33);
             this.btnCancelar.TabIndex = 4;
@@ -106,7 +107,7 @@
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.Red;
-            this.btnSair.Location = new System.Drawing.Point(379, 349);
+            this.btnSair.Location = new System.Drawing.Point(574, 459);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(81, 33);
             this.btnSair.TabIndex = 5;
@@ -116,7 +117,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(98, 292);
+            this.txtSenha.Location = new System.Drawing.Point(294, 379);
             this.txtSenha.MaxLength = 6;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
@@ -128,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(600, 600);
+            this.ClientSize = new System.Drawing.Size(952, 692);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEntrar);

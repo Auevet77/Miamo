@@ -130,3 +130,7 @@ C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\Miamo.UI\obj\Debug\Miamo.UI.cspr
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\Miamo.UI\obj\Debug\Miamo.UI.csproj.CopyComplete
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\Miamo.UI\obj\Debug\Miamo.UI.dll
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\Miamo.UI\obj\Debug\Miamo.UI.pdb
+C:\Users\claudio.dduarte\source\repos\Miamoo\Miamo.UI\obj\Debug\Miamo.UI.csproj.AssemblyReference.cache
+C:\Users\claudio.dduarte\source\repos\Miamoo\Miamo.UI\obj\Debug\Miamo.UI.csproj.CoreCompileInputs.cache
+C:\Users\claudio.dduarte\source\repos\Miamoo\Miamo.UI\obj\Debug\Miamo.UI.dll
+C:\Users\claudio.dduarte\source\repos\Miamoo\Miamo.UI\obj\Debug\Miamo.UI.pdb

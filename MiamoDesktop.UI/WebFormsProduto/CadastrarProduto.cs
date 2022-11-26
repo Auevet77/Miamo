@@ -97,5 +97,15 @@ namespace MiamoDesktop.UI.WebFormsProduto
             cboCategoria.Text = "";
             
         }
+
+        private void txtPrecoProduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
