@@ -33,7 +33,7 @@ namespace MiamoDesktop
         private Button btnPesquisar;
         private Button btnConfirmar;
         private Label label6;
-        private TextBox textBox2;
+        private TextBox txtTpUsuario;
         private GroupBox gBox3;
         private GroupBox gBox1;
         private Label label1;
@@ -64,7 +64,7 @@ namespace MiamoDesktop
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTpUsuario = new System.Windows.Forms.TextBox();
             this.gBox3 = new System.Windows.Forms.GroupBox();
             this.gBox1 = new System.Windows.Forms.GroupBox();
             this.gBox2.SuspendLayout();
@@ -76,12 +76,13 @@ namespace MiamoDesktop
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(197, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(590, 73);
             this.label1.TabIndex = 1;
             this.label1.Text = "EDITAR USUÁRIO";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // gBox2
             // 
@@ -101,7 +102,7 @@ namespace MiamoDesktop
             this.rb1.Location = new System.Drawing.Point(51, 38);
             this.rb1.Name = "rb1";
             this.rb1.Size = new System.Drawing.Size(128, 25);
-            this.rb1.TabIndex = 7;
+            this.rb1.TabIndex = 8;
             this.rb1.TabStop = true;
             this.rb1.Text = "Administrador";
             this.rb1.UseVisualStyleBackColor = true;
@@ -112,7 +113,7 @@ namespace MiamoDesktop
             this.rb2.Location = new System.Drawing.Point(51, 89);
             this.rb2.Name = "rb2";
             this.rb2.Size = new System.Drawing.Size(76, 25);
-            this.rb2.TabIndex = 8;
+            this.rb2.TabIndex = 9;
             this.rb2.TabStop = true;
             this.rb2.Text = "Outros";
             this.rb2.UseVisualStyleBackColor = true;
@@ -124,7 +125,7 @@ namespace MiamoDesktop
             this.btnSair.Location = new System.Drawing.Point(599, 107);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(87, 41);
-            this.btnSair.TabIndex = 18;
+            this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -132,11 +133,11 @@ namespace MiamoDesktop
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Blue;
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Location = new System.Drawing.Point(371, 32);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 41);
-            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -144,11 +145,11 @@ namespace MiamoDesktop
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ForeColor = System.Drawing.Color.Blue;
+            this.btnExcluir.ForeColor = System.Drawing.Color.Red;
             this.btnExcluir.Location = new System.Drawing.Point(25, 32);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(107, 41);
-            this.btnExcluir.TabIndex = 16;
+            this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -158,7 +159,7 @@ namespace MiamoDesktop
             this.txtEmail.Location = new System.Drawing.Point(24, 197);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(381, 20);
-            this.txtEmail.TabIndex = 15;
+            this.txtEmail.TabIndex = 6;
             // 
             // txtSenha
             // 
@@ -166,14 +167,14 @@ namespace MiamoDesktop
             this.txtSenha.MaxLength = 6;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(381, 20);
-            this.txtSenha.TabIndex = 14;
+            this.txtSenha.TabIndex = 5;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(24, 56);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(381, 20);
-            this.txtNome.TabIndex = 10;
+            this.txtNome.TabIndex = 4;
             // 
             // label4
             // 
@@ -224,16 +225,16 @@ namespace MiamoDesktop
             this.txtId.Location = new System.Drawing.Point(151, 128);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(153, 20);
-            this.txtId.TabIndex = 10;
+            this.txtId.TabIndex = 1;
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.ForeColor = System.Drawing.Color.Blue;
+            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
             this.btnPesquisar.Location = new System.Drawing.Point(413, 107);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(107, 41);
-            this.btnPesquisar.TabIndex = 20;
+            this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -241,11 +242,11 @@ namespace MiamoDesktop
             // btnConfirmar
             // 
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Blue;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
             this.btnConfirmar.Location = new System.Drawing.Point(193, 32);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(107, 41);
-            this.btnConfirmar.TabIndex = 21;
+            this.btnConfirmar.TabIndex = 11;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
@@ -261,21 +262,21 @@ namespace MiamoDesktop
             this.label6.TabIndex = 11;
             this.label6.Text = "Tipo do Usuário";
             // 
-            // textBox2
+            // txtTpUsuario
             // 
-            this.textBox2.Location = new System.Drawing.Point(24, 265);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(381, 20);
-            this.textBox2.TabIndex = 15;
+            this.txtTpUsuario.Location = new System.Drawing.Point(24, 265);
+            this.txtTpUsuario.Name = "txtTpUsuario";
+            this.txtTpUsuario.Size = new System.Drawing.Size(381, 20);
+            this.txtTpUsuario.TabIndex = 7;
             // 
             // gBox3
             // 
             this.gBox3.Controls.Add(this.btnExcluir);
             this.gBox3.Controls.Add(this.btnConfirmar);
             this.gBox3.Controls.Add(this.btnCancelar);
-            this.gBox3.Location = new System.Drawing.Point(233, 485);
+            this.gBox3.Location = new System.Drawing.Point(233, 529);
             this.gBox3.Name = "gBox3";
-            this.gBox3.Size = new System.Drawing.Size(513, 100);
+            this.gBox3.Size = new System.Drawing.Size(513, 105);
             this.gBox3.TabIndex = 22;
             this.gBox3.TabStop = false;
             // 
@@ -287,7 +288,7 @@ namespace MiamoDesktop
             this.gBox1.Controls.Add(this.gBox2);
             this.gBox1.Controls.Add(this.txtNome);
             this.gBox1.Controls.Add(this.label6);
-            this.gBox1.Controls.Add(this.textBox2);
+            this.gBox1.Controls.Add(this.txtTpUsuario);
             this.gBox1.Controls.Add(this.txtSenha);
             this.gBox1.Controls.Add(this.txtEmail);
             this.gBox1.Location = new System.Drawing.Point(133, 181);
@@ -295,10 +296,11 @@ namespace MiamoDesktop
             this.gBox1.Size = new System.Drawing.Size(803, 298);
             this.gBox1.TabIndex = 23;
             this.gBox1.TabStop = false;
+            this.gBox1.Enter += new System.EventHandler(this.gBox1_Enter);
             // 
             // Editar
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.gBox1);
             this.Controls.Add(this.gBox3);
@@ -376,16 +378,14 @@ namespace MiamoDesktop
             UsuarioBLL objPesqBLL = new UsuarioBLL();//metodo
             objPesquisa = objPesqBLL.SelecionarUsuario(codigo);
 
-            if (objPesquisa != null)
+            if (objPesquisa.NomeUsuario != null)
             {
 
                 //habilitando componentes
                 txtNome.Text = objPesquisa.NomeUsuario;
                 txtSenha.Text = objPesquisa.SenhaUsuario;
                 txtEmail.Text = objPesquisa.EmailUsuario;
-               
-
-
+                txtTpUsuario.Text = objPesquisa.DescricaoTpUsuario;
 
             }
             else
@@ -405,6 +405,7 @@ namespace MiamoDesktop
             objPesquisa.IdUsuario = Convert.ToInt32(txtId.Text);
             objPesquisa.NomeUsuario = txtNome.Text;
             objPesquisa.SenhaUsuario = txtSenha.Text;
+            objPesquisa.EmailUsuario = txtEmail.Text;
 
             //alertando radio buttons não selecionados
             if ((!rb1.Checked) && !rb2.Checked)
@@ -423,7 +424,9 @@ namespace MiamoDesktop
                 objPesquisa.TpUsuario = "2";
             }
 
-            
+            objPesqBLL.EditarUsuario(objPesquisa);
+            Limpar();
+            MessageBox.Show("Usuário editado com sucesso!!");
 
            
 
@@ -434,7 +437,7 @@ namespace MiamoDesktop
             DialogResult msg = MessageBox.Show("Deseja mesmo eliminar o registro?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             //manipulando o valor escolhido mo messagebox
-            if (msg != DialogResult.Yes)
+            if (msg == DialogResult.Yes)
             {
                 UsuarioBLL objExcluiBLL = new UsuarioBLL();//metodo
                 int codigo = Convert.ToInt32(txtId.Text);
@@ -445,6 +448,16 @@ namespace MiamoDesktop
             {
                 Limpar();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

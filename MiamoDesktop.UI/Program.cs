@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MiamoDesktop.UI.WebFormsCategoriaProduto;
+using MiamoDesktop.UI.WebFormsProduto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace MiamoDesktop.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cadastrar());
+            Application.Run(new EditarCategoria());
         }
     }
 }

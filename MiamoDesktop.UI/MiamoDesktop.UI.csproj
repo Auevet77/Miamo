@@ -48,9 +48,11 @@
   <ItemGroup>
     <Compile Include="Cadastrar.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Cadastrar.designer.cs">
       <DependentUpon>Cadastrar.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Editar.cs">
       <SubType>Form</SubType>
@@ -78,8 +80,27 @@
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.Designer.cs">
+      <DependentUpon>CadastrarCategoriaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormsCategoriaProduto\EditarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebFormsCategoriaProduto\EditarCategoria.Designer.cs">
+      <DependentUpon>EditarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormsProduto\CadastrarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebFormsProduto\CadastrarProduto.Designer.cs">
+      <DependentUpon>CadastrarProduto.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Editar.resx">
       <DependentUpon>Editar.cs</DependentUpon>
@@ -111,6 +132,15 @@
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WebFormsCategoriaProduto\CadastrarCategoriaProduto.resx">
+      <DependentUpon>CadastrarCategoriaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebFormsCategoriaProduto\EditarCategoria.resx">
+      <DependentUpon>EditarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebFormsProduto\CadastrarProduto.resx">
+      <DependentUpon>CadastrarProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -134,5 +164,6 @@
       <Name>Miamo.DTO</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

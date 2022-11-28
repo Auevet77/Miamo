@@ -45,7 +45,7 @@ namespace Miamo.UI.Pages
                     string CaminhoImg = "~/Img" + "/" + str.ToString();
                     objModelo.UrlImagemProduto = CaminhoImg;
                 }
-                objModelo.FKCategoriaProduto = (gv1.FooterRow.FindControl("ddl1") as DropDownList).Text.Trim();
+                objModelo.IdCategoriaProduto = (gv1.FooterRow.FindControl("ddl1") as DropDownList).Text.Trim();
                 //chamando o metodo
                 objBLL.CadastraProduto(objModelo);
                 PopularGV();
@@ -80,7 +80,7 @@ namespace Miamo.UI.Pages
                 string CaminhoImg = "~/Img" + "/" + str.ToString();
                 objModelo.UrlImagemProduto = CaminhoImg;
             }
-            objModelo.FKCategoriaProduto = (gv1.Rows[e.RowIndex].FindControl("ddl1") as DropDownList).Text.Trim();
+            objModelo.IdCategoriaProduto = (gv1.Rows[e.RowIndex].FindControl("ddl1") as DropDownList).Text.Trim();
             objModelo.IdProduto = Convert.ToInt32(gv1.DataKeys[e.RowIndex].Value.ToString());
             //chamando o metodo
             objBLL.EditarProduto(objModelo);

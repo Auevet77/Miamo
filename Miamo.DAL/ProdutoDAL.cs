@@ -16,13 +16,16 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("INSERT INTO Produto (NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,FKCategoriaProduto) VALUES (@v1,@v2,@v3,@v4,@v5,@v6)", conn);
+                cmd = new SqlCommand("INSERT INTO Produto (NomeProduto,DescricaoProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,IdCategoriaProduto,IdFornecedor) VALUES (@v1,@v2,@v3,@v4,@v5,@v6,@v7,@v8)", conn);
                 cmd.Parameters.AddWithValue("@v1", objCad.NomeProduto);
-                cmd.Parameters.AddWithValue("@v2", objCad.TamanhoProduto);
-                cmd.Parameters.AddWithValue("@v3", objCad.PrecoProduto);
-                cmd.Parameters.AddWithValue("@v4", objCad.CorProduto);
-                cmd.Parameters.AddWithValue("@v5", objCad.UrlImagemProduto);
-                cmd.Parameters.AddWithValue("@v6", objCad.FKCategoriaProduto);
+                cmd.Parameters.AddWithValue("@v2", objCad.DescricaoProduto);
+                cmd.Parameters.AddWithValue("@v3", objCad.TamanhoProduto);
+                cmd.Parameters.AddWithValue("@v4", objCad.PrecoProduto);
+                cmd.Parameters.AddWithValue("@v5", objCad.CorProduto);
+                cmd.Parameters.AddWithValue("@v6", objCad.UrlImagemProduto);
+                cmd.Parameters.AddWithValue("@v7", objCad.IdCategoriaProduto);
+                cmd.Parameters.AddWithValue("@v8", objCad.IdFornecedor);
+
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -78,14 +81,16 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("UPDATE Produto SET NomeProduto=@v1,TamanhoProduto=@v2,PrecoProduto=@v3,CorProduto=@v4,UrlImagemProduto=@v5,FKCategoriaProduto=@v6 WHERE IdProduto=@v7", conn);
+                cmd = new SqlCommand("UPDATE Produto SET NomeProduto=@v1,TamanhoProduto=@v2,PrecoProduto=@v3,CorProduto=@v4,UrlImagemProduto=@v5,IdCategoriaProduto=@v6, DescricaoProduto=@v8, IdFornecedor=@v9, WHERE IdProduto=@v7", conn);
                 cmd.Parameters.AddWithValue("@v1", objEdita.NomeProduto);
                 cmd.Parameters.AddWithValue("@v2", objEdita.TamanhoProduto);
                 cmd.Parameters.AddWithValue("@v3", objEdita.PrecoProduto);
                 cmd.Parameters.AddWithValue("@v4", objEdita.CorProduto);
                 cmd.Parameters.AddWithValue("@v5", objEdita.UrlImagemProduto);
-                cmd.Parameters.AddWithValue("@v6", objEdita.FKCategoriaProduto);
+                cmd.Parameters.AddWithValue("@v6", objEdita.IdCategoriaProduto);
                 cmd.Parameters.AddWithValue("@v7", objEdita.IdProduto);
+                cmd.Parameters.AddWithValue("@v8", objEdita.DescricaoProduto);
+                cmd.Parameters.AddWithValue("@v9", objEdita.IdFornecedor);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -128,7 +133,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto = IdCategoria", conn);
+                cmd = new SqlCommand("SELECT IdProduto,DescricaoProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN CategoriaProduto ON IdCategoriaProduto = IdCategoria", conn);
                 dr = cmd.ExecuteReader();
                 List<FiltroProdutoDTO> Lista = new List<FiltroProdutoDTO>();
                 while (dr.Read())
@@ -141,6 +146,8 @@ namespace Miamo.DAL
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
                     obj.CategoriaProduto = dr["NomeCategoria"].ToString();
+                    obj.DescricaoProduto = dr["DescricaoProduto"].ToString();
+                    
 
                     Lista.Add(obj);
                 }
@@ -163,7 +170,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN CategoriaProduto ON IdCategoriaProduto =IdCategoria WHERE IdCategoriaProduto = @v1", conn);
+                cmd = new SqlCommand("SELECT IdProduto,DescricaoProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN CategoriaProduto ON IdCategoriaProduto =IdCategoria WHERE IdCategoriaProduto = @v1", conn);
                 cmd.Parameters.AddWithValue("@v1", IdCategoria);
 
                 dr = cmd.ExecuteReader();
@@ -178,6 +185,7 @@ namespace Miamo.DAL
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
                     obj.CategoriaProduto = dr["NomeCategoria"].ToString();
+                    obj.DescricaoProduto = dr["DescricaoProduto"].ToString();
 
                     Lista.Add(obj);
                 }
@@ -201,7 +209,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto = IdCategoria WHERE IdProduto=" + idProduto, conn);
+                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,DescricaoProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN CategoriaProduto ON IdCategoriaProduto = IdCategoria WHERE IdProduto=" + idProduto, conn);
                 dr = cmd.ExecuteReader();
                 ProdutoListDTO obj = new ProdutoListDTO();
                 if (dr.Read())
@@ -213,6 +221,7 @@ namespace Miamo.DAL
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
                     obj.CategoriaProduto = dr["NomeProduto"].ToString();
+                    obj.DescricaoProduto = dr["DescricaoProduto"].ToString();
                 }
                 return obj;
             }
