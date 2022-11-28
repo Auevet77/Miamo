@@ -1,0 +1,6 @@
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\bin\Release\Miamo.DTO.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\bin\Release\Miamo.DTO.pdb
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\obj\Release\Miamo.DTO.csproj.AssemblyReference.cache
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\obj\Release\Miamo.DTO.csproj.CoreCompileInputs.cache
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\obj\Release\Miamo.DTO.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\obj\Release\Miamo.DTO.pdb
