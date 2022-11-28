@@ -48,16 +48,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(102, 27);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(121, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(740, 42);
             this.label1.TabIndex = 2;
             this.label1.Text = "EDIÇÃO DE CATEGORIA DE PRODUTO";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtNomeCategoriaProduto
             // 
-            this.txtNomeCategoriaProduto.Location = new System.Drawing.Point(26, 58);
+            this.txtNomeCategoriaProduto.Location = new System.Drawing.Point(26, 78);
             this.txtNomeCategoriaProduto.Name = "txtNomeCategoriaProduto";
             this.txtNomeCategoriaProduto.Size = new System.Drawing.Size(381, 20);
             this.txtNomeCategoriaProduto.TabIndex = 12;
@@ -67,7 +68,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(21, 30);
+            this.label2.Location = new System.Drawing.Point(21, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(238, 25);
             this.label2.TabIndex = 13;
@@ -78,16 +79,16 @@
             this.gpBox2.Controls.Add(this.btnExcluir);
             this.gpBox2.Controls.Add(this.btnConfirmar);
             this.gpBox2.Controls.Add(this.btnCancelar);
-            this.gpBox2.Location = new System.Drawing.Point(231, 445);
+            this.gpBox2.Location = new System.Drawing.Point(231, 495);
             this.gpBox2.Name = "gpBox2";
-            this.gpBox2.Size = new System.Drawing.Size(513, 100);
+            this.gpBox2.Size = new System.Drawing.Size(513, 101);
             this.gpBox2.TabIndex = 23;
             this.gpBox2.TabStop = false;
             // 
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ForeColor = System.Drawing.Color.Blue;
+            this.btnExcluir.ForeColor = System.Drawing.Color.Red;
             this.btnExcluir.Location = new System.Drawing.Point(25, 32);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(107, 41);
@@ -99,8 +100,8 @@
             // btnConfirmar
             // 
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Blue;
-            this.btnConfirmar.Location = new System.Drawing.Point(193, 32);
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
+            this.btnConfirmar.Location = new System.Drawing.Point(201, 32);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(107, 41);
             this.btnConfirmar.TabIndex = 11;
@@ -111,8 +112,8 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Blue;
-            this.btnCancelar.Location = new System.Drawing.Point(371, 32);
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Location = new System.Drawing.Point(353, 32);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 41);
             this.btnCancelar.TabIndex = 12;
@@ -123,10 +124,10 @@
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.ForeColor = System.Drawing.Color.Blue;
-            this.btnPesquisar.Location = new System.Drawing.Point(482, 119);
+            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
+            this.btnPesquisar.Location = new System.Drawing.Point(446, 167);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(107, 41);
+            this.btnPesquisar.Size = new System.Drawing.Size(107, 30);
             this.btnPesquisar.TabIndex = 25;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -136,9 +137,9 @@
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.Red;
-            this.btnSair.Location = new System.Drawing.Point(668, 119);
+            this.btnSair.Location = new System.Drawing.Point(584, 167);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(87, 41);
+            this.btnSair.Size = new System.Drawing.Size(87, 32);
             this.btnSair.TabIndex = 26;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -146,9 +147,9 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(220, 140);
+            this.txtId.Location = new System.Drawing.Point(256, 174);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(153, 20);
+            this.txtId.Size = new System.Drawing.Size(103, 20);
             this.txtId.TabIndex = 24;
             // 
             // label5
@@ -156,7 +157,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(215, 112);
+            this.label5.Location = new System.Drawing.Point(253, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 25);
             this.label5.TabIndex = 27;
@@ -166,9 +167,9 @@
             // 
             this.gpBox1.Controls.Add(this.label2);
             this.gpBox1.Controls.Add(this.txtNomeCategoriaProduto);
-            this.gpBox1.Location = new System.Drawing.Point(264, 256);
+            this.gpBox1.Location = new System.Drawing.Point(264, 270);
             this.gpBox1.Name = "gpBox1";
-            this.gpBox1.Size = new System.Drawing.Size(439, 100);
+            this.gpBox1.Size = new System.Drawing.Size(439, 150);
             this.gpBox1.TabIndex = 28;
             this.gpBox1.TabStop = false;
             // 
@@ -176,8 +177,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.BackColor = System.Drawing.Color.Turquoise;
+            this.ClientSize = new System.Drawing.Size(1000, 689);
             this.Controls.Add(this.gpBox1);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.btnSair);
