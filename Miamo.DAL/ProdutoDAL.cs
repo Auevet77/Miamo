@@ -81,7 +81,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("UPDATE Produto SET NomeProduto=@v1,TamanhoProduto=@v2,PrecoProduto=@v3,CorProduto=@v4,UrlImagemProduto=@v5,IdCategoriaProduto=@v6, DescricaoProduto=@v8, IdFornecedor=@v9, WHERE IdProduto=@v7", conn);
+                cmd = new SqlCommand("UPDATE Produto SET NomeProduto=@v1,TamanhoProduto=@v2,PrecoProduto=@v3,CorProduto=@v4,UrlImagemProduto=@v5,IdCategoriaProduto=@v6, DescricaoProduto=@v8, IdFornecedor=@v9 WHERE IdProduto=@v7", conn);
                 cmd.Parameters.AddWithValue("@v1", objEdita.NomeProduto);
                 cmd.Parameters.AddWithValue("@v2", objEdita.TamanhoProduto);
                 cmd.Parameters.AddWithValue("@v3", objEdita.PrecoProduto);

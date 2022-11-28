@@ -1,0 +1,9 @@
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\bin\Release\Miamo.DAL.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\bin\Release\Miamo.DAL.pdb
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\bin\Release\Miamo.DTO.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\bin\Release\Miamo.DTO.pdb
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.csproj.AssemblyReference.cache
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.csproj.CopyComplete
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.pdb
