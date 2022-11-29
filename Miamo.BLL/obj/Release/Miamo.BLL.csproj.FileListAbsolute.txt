@@ -1,0 +1,11 @@
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\bin\Release\Miamo.BLL.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\bin\Release\Miamo.BLL.pdb
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\bin\Release\Miamo.DAL.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\bin\Release\Miamo.DTO.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\bin\Release\Miamo.DAL.pdb
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\bin\Release\Miamo.DTO.pdb
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\obj\Release\Miamo.BLL.csproj.AssemblyReference.cache
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\obj\Release\Miamo.BLL.csproj.CoreCompileInputs.cache
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\obj\Release\Miamo.BLL.csproj.CopyComplete
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\obj\Release\Miamo.BLL.dll
+C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.BLL\obj\Release\Miamo.BLL.pdb
