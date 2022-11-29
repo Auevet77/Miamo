@@ -50,11 +50,11 @@ namespace MiamoDesktop.UI.WebFormsProduto
             objCAD.PrecoProduto = txtPrecoProduto.Text;
             objCAD.CorProduto = txtCorProduto.Text;            
             objCAD.IdCategoriaProduto = cboCategoria.SelectedValue.ToString();
-            objCAD.IdFornecedor = txtFornecedorProduto.Text;
+            objCAD.IdFornecedor = Convert.ToInt32(txtFornecedorProduto.Text);
 
             //salvando a URL da imagem
             string nomeImg = txtNomeProduto.Text + ".jpg";
-            string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo1\Miamo.UI\Img";
+            string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo3\MiamoDesktop.UI\Img";
             string caminhoImg = Path.Combine(pasta, nomeImg);
             objCAD.UrlImagemProduto = caminhoImg;
 

@@ -98,6 +98,12 @@
     <Compile Include="WebFormsProduto\CadastrarProduto.Designer.cs">
       <DependentUpon>CadastrarProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebFormsProduto\EditarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebFormsProduto\EditarProduto.Designer.cs">
+      <DependentUpon>EditarProduto.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -141,6 +147,9 @@
     <EmbeddedResource Include="WebFormsProduto\CadastrarProduto.resx">
       <DependentUpon>CadastrarProduto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WebFormsProduto\EditarProduto.resx">
+      <DependentUpon>EditarProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -164,6 +173,8 @@
       <Name>Miamo.DTO</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Img\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

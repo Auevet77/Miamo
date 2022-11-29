@@ -16,7 +16,7 @@ namespace Miamo.DTO
         public string CorProduto { get; set; }
         public string UrlImagemProduto { get; set; }
         public string IdCategoriaProduto { get; set; }
-        public string IdFornecedor { get; set; }
+        public int IdFornecedor { get; set; }
 
         //relacionamento
         //public string FKCategoriaProduto { get; set; }
