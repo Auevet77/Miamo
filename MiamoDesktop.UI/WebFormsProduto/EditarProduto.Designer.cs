@@ -113,6 +113,7 @@
             this.btnImagem.TabIndex = 27;
             this.btnImagem.Text = "Selecionar Imagem";
             this.btnImagem.UseVisualStyleBackColor = true;
+            this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
             // 
             // picBox1
             // 
@@ -306,6 +307,7 @@
             this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnConfirmar
             // 

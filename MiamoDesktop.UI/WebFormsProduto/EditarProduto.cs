@@ -26,6 +26,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
             cboCategoria.Text = "";
             picBox1.Image = null;
             gpBox1.Visible = gpBox2.Enabled = false;
+            txtId.Enabled = btnPesquisar.Enabled = true;
             txtId.Focus();
         }
 
@@ -49,6 +50,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
         {
             gpBox1.Visible = true;
             gpBox2.Enabled = true;
+            txtId.Enabled = btnPesquisar.Enabled = false;
 
             //checando preenchimento do campo Id
             int codigo;
@@ -132,6 +134,36 @@ namespace MiamoDesktop.UI.WebFormsProduto
             Limpar();
             MessageBox.Show("Produto editado com sucesso!!");
 
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("Deseja mesmo eliminar o registro?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            //manipulando o valor escolhido mo messagebox
+            if (msg == DialogResult.Yes)
+            {
+                ProdutoBLL objExcluiBLL = new ProdutoBLL();//metodo
+                int codigo = Convert.ToInt32(txtId.Text);
+                objExcluiBLL.ExcluirProduto(codigo);
+                Limpar();
+            }
+            else if (msg == DialogResult.No)
+            {
+                Limpar();
+            }
+        }
+
+        private void btnImagem_Click(object sender, EventArgs e)
+        {
+            //carregando imagem
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "jpg files(*.jpg)|*.jpg|PNG files(*.png)|*.png|All Files(*.*)|*.*";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                string img = dialog.FileName.ToString();
+                picBox1.ImageLocation = img;
+            }
         }
     }
 }

@@ -23,7 +23,8 @@ namespace MiamoDesktop.UI.WebFormsCategoriaProduto
         public void Limpar()
         {            
             txtId.Text = txtNomeCategoriaProduto.Text = string.Empty;
-            gpBox1.Visible = gpBox2.Enabled = false;            
+            gpBox1.Visible = gpBox2.Enabled = false;
+            txtId.Enabled = btnPesquisar.Enabled = true;
             txtId.Focus();
         }
 
@@ -41,6 +42,7 @@ namespace MiamoDesktop.UI.WebFormsCategoriaProduto
         {
             gpBox1.Visible = true;
             gpBox2.Enabled = true;
+            txtId.Enabled = btnPesquisar.Enabled = false;
 
             //checando preenchimento do campo Id
             int codigo;
@@ -98,7 +100,20 @@ namespace MiamoDesktop.UI.WebFormsCategoriaProduto
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+            DialogResult msg = MessageBox.Show("Deseja mesmo eliminar o registro?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
+            //manipulando o valor escolhido mo messagebox
+            if (msg == DialogResult.Yes)
+            {
+                CategoriaBLL objExcluiBLL = new CategoriaBLL();//metodo
+                int codigo = Convert.ToInt32(txtId.Text);
+                objExcluiBLL.ExcluirCategoria(codigo);
+                Limpar();
+            }
+            else if (msg == DialogResult.No)
+            {
+                Limpar();
+            }
         }
     }
 }

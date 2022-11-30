@@ -132,3 +132,10 @@ C:\Users\italo.qfsousa\source\repos\Miamo\MiamoDesktop.UI\obj\Debug\MiamoDesktop
 C:\Users\italo.qfsousa\source\repos\Miamo\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.csproj.CopyComplete
 C:\Users\italo.qfsousa\source\repos\Miamo\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.exe
 C:\Users\italo.qfsousa\source\repos\Miamo\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.pdb
+C:\Users\romilson.gmonteiro\Source\Repos\Miamo\MiamoDesktop.UI\bin\Debug\Cadastrar.resx
+C:\Users\romilson.gmonteiro\Source\Repos\Miamo\MiamoDesktop.UI\bin\Debug\Cadastrar.cs
+C:\Users\romilson.gmonteiro\Source\Repos\Miamo\MiamoDesktop.UI\bin\Debug\Cadastrar.designer.cs
+C:\Users\romilson.gmonteiro\Source\Repos\Miamo\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsProduto.CadastrarCategoriaProduto.resources
+C:\Users\romilson.gmonteiro\Source\Repos\Miamo\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsCategoriaProduto.EditarCategoria.resources
+C:\Users\romilson.gmonteiro\Source\Repos\Miamo\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsProduto.CadastrarProduto.resources
+C:\Users\romilson.gmonteiro\Source\Repos\Miamo\MiamoDesktop.UI\obj\Debug\MiamoDesktop.UI.WebFormsProduto.EditarProduto.resources
