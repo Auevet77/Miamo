@@ -112,6 +112,7 @@
             // txtTamanhoProduto
             // 
             this.txtTamanhoProduto.Location = new System.Drawing.Point(84, 280);
+            this.txtTamanhoProduto.MaxLength = 3;
             this.txtTamanhoProduto.Name = "txtTamanhoProduto";
             this.txtTamanhoProduto.Size = new System.Drawing.Size(381, 20);
             this.txtTamanhoProduto.TabIndex = 3;
@@ -180,7 +181,7 @@
             this.txtFornecedorProduto.Location = new System.Drawing.Point(85, 596);
             this.txtFornecedorProduto.Name = "txtFornecedorProduto";
             this.txtFornecedorProduto.Size = new System.Drawing.Size(381, 20);
-            this.txtFornecedorProduto.TabIndex = 8;
+            this.txtFornecedorProduto.TabIndex = 7;
             // 
             // btnSair
             // 
@@ -235,7 +236,7 @@
             this.btnImagem.Location = new System.Drawing.Point(527, 377);
             this.btnImagem.Name = "btnImagem";
             this.btnImagem.Size = new System.Drawing.Size(255, 34);
-            this.btnImagem.TabIndex = 13;
+            this.btnImagem.TabIndex = 8;
             this.btnImagem.Text = "Selecionar Imagem";
             this.btnImagem.UseVisualStyleBackColor = true;
             this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
@@ -247,7 +248,7 @@
             this.cboCategoria.Location = new System.Drawing.Point(85, 503);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(380, 28);
-            this.cboCategoria.TabIndex = 14;
+            this.cboCategoria.TabIndex = 6;
             // 
             // CadastrarProduto
             // 

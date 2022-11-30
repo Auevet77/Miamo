@@ -50,7 +50,7 @@
   </head>
 
  <body>
-    <%--<header>
+    <header>
       <nav  class="navbar navbar-expand-lg fixed-top">
         <div id="nav.menu" class="container-fluid">
           <a href="index.html"><img id="logo" src="img/index/LogoMiamo.gif" alt="logo MIAMO" /></a>
@@ -97,7 +97,7 @@
           </div>
 
       </nav>
-    </header>--%>
+    </header>
 
      
 
