@@ -40,8 +40,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(62, 22);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(86, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(808, 42);
             this.label1.TabIndex = 1;
@@ -51,7 +51,7 @@
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.Red;
-            this.btnSair.Location = new System.Drawing.Point(639, 413);
+            this.btnSair.Location = new System.Drawing.Point(641, 449);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(87, 41);
             this.btnSair.TabIndex = 9;
@@ -62,8 +62,8 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Blue;
-            this.btnCancelar.Location = new System.Drawing.Point(443, 413);
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Location = new System.Drawing.Point(445, 449);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 41);
             this.btnCancelar.TabIndex = 8;
@@ -74,8 +74,8 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.Blue;
-            this.btnCadastrar.Location = new System.Drawing.Point(253, 413);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCadastrar.Location = new System.Drawing.Point(255, 449);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(107, 41);
             this.btnCadastrar.TabIndex = 7;
@@ -85,7 +85,7 @@
             // 
             // txtNomeCategoriaProduto
             // 
-            this.txtNomeCategoriaProduto.Location = new System.Drawing.Point(313, 239);
+            this.txtNomeCategoriaProduto.Location = new System.Drawing.Point(292, 273);
             this.txtNomeCategoriaProduto.Name = "txtNomeCategoriaProduto";
             this.txtNomeCategoriaProduto.Size = new System.Drawing.Size(381, 20);
             this.txtNomeCategoriaProduto.TabIndex = 10;
@@ -95,7 +95,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(308, 211);
+            this.label2.Location = new System.Drawing.Point(287, 234);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(399, 25);
             this.label2.TabIndex = 11;
@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.txtNomeCategoriaProduto);
             this.Controls.Add(this.label2);
