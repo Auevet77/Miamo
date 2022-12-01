@@ -84,7 +84,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
                 txtNomeProduto.Text = objPesquisa.NomeProduto;
                 txtDescricaoProduto.Text = objPesquisa.DescricaoProduto;
                 txtTamanhoProduto.Text = objPesquisa.TamanhoProduto;
-                txtPrecoProduto.Text = objPesquisa.PrecoProduto;
+                txtPrecoProduto.Text = objPesquisa.PrecoProduto.ToString("C2");
                 txtCorProduto.Text = objPesquisa.CorProduto;
                 cboCategoria.Text = objPesquisa.CategoriaProduto.ToString();
                 txtFornecedorProduto.Text = objPesquisa.IdFornecedor.ToString();
@@ -107,7 +107,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
             objPesquisa.NomeProduto = txtNomeProduto.Text;
             objPesquisa.DescricaoProduto = txtDescricaoProduto.Text;
             objPesquisa.TamanhoProduto = txtTamanhoProduto.Text;
-            objPesquisa.PrecoProduto = txtPrecoProduto.Text;
+            objPesquisa.PrecoProduto = Convert.ToDecimal(txtPrecoProduto.Text.Replace("R$",""));
             objPesquisa.CorProduto = txtCorProduto.Text;
             objPesquisa.IdCategoriaProduto = cboCategoria.SelectedValue.ToString();
             objPesquisa.IdFornecedor = Convert.ToInt32(txtFornecedorProduto.Text);

@@ -134,3 +134,5 @@ C:\Users\claudio.dduarte\Source\Repos\Miamo\Miamo.UI\obj\Debug\Miamo.UI.csproj.C
 C:\Users\claudio.dduarte\Source\Repos\Miamo\Miamo.UI\obj\Debug\Miamo.UI.csproj.CopyComplete
 C:\Users\claudio.dduarte\Source\Repos\Miamo\Miamo.UI\obj\Debug\Miamo.UI.dll
 C:\Users\claudio.dduarte\Source\Repos\Miamo\Miamo.UI\obj\Debug\Miamo.UI.pdb
+C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.UI\obj\Debug\Miamo.UI.csproj.AssemblyReference.cache
+C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.UI\obj\Debug\Miamo.UI.csproj.CoreCompileInputs.cache

@@ -135,6 +135,8 @@
             this.txtPrecoProduto.Size = new System.Drawing.Size(381, 20);
             this.txtPrecoProduto.TabIndex = 4;
             this.txtPrecoProduto.TextChanged += new System.EventHandler(this.txtPrecoProduto_TextChanged);
+            this.txtPrecoProduto.Enter += new System.EventHandler(this.txtPrecoProduto_Enter);
+            this.txtPrecoProduto.Leave += new System.EventHandler(this.txtPrecoProduto_Leave);
             // 
             // label6
             // 

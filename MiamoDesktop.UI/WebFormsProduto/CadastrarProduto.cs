@@ -47,7 +47,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
             objCAD.NomeProduto = txtNomeProduto.Text;
             objCAD.DescricaoProduto = txtDescricaoProduto.Text;
             objCAD.TamanhoProduto = txtTamanhoProduto.Text;
-            objCAD.PrecoProduto = txtPrecoProduto.Text;
+            objCAD.PrecoProduto = Convert.ToDecimal(txtPrecoProduto.Text.Replace("R$", ""));
             objCAD.CorProduto = txtCorProduto.Text;            
             objCAD.IdCategoriaProduto = cboCategoria.SelectedValue.ToString();
             objCAD.IdFornecedor = Convert.ToInt32(txtFornecedorProduto.Text);
@@ -106,6 +106,26 @@ namespace MiamoDesktop.UI.WebFormsProduto
         private void picBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtPrecoProduto_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal Valor = Convert.ToDecimal(txtPrecoProduto.Text.Replace("R$", ""));
+                txtPrecoProduto.Text = Valor.ToString("C2");
+
+            }
+            catch
+            {
+                txtPrecoProduto.Text = "";
+            }
+
+        }
+
+        private void txtPrecoProduto_Enter(object sender, EventArgs e)
+        {
+            txtPrecoProduto.Text = txtPrecoProduto.Text.Replace("R$ ","");            
         }
     }
 }

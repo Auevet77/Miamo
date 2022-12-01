@@ -55,7 +55,7 @@ namespace Miamo.DAL
                     obj.NomeProduto = dr["NomeProduto"].ToString();
                     obj.DescricaoProduto = dr["DescricaoProduto"].ToString();
                     obj.TamanhoProduto = dr["TamanhoProduto"].ToString();
-                    obj.PrecoProduto = dr["PrecoProduto"].ToString();
+                    obj.PrecoProduto = Convert.ToDecimal(dr["PrecoProduto"]);
                     obj.CorProduto = dr["CorProduto"].ToString();                    
                     obj.CategoriaProduto = dr["NomeCategoria"].ToString();
 
@@ -217,7 +217,7 @@ namespace Miamo.DAL
                     obj.IdProduto = Convert.ToInt32(dr["IdProduto"]);
                     obj.NomeProduto = dr["NomeProduto"].ToString();
                     obj.TamanhoProduto = dr["TamanhoProduto"].ToString();
-                    obj.PrecoProduto = dr["PrecoProduto"].ToString();
+                    obj.PrecoProduto = Convert.ToDecimal(dr["PrecoProduto"]);
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
                     obj.CategoriaProduto = dr["NomeCategoria"].ToString();
