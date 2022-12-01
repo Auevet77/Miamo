@@ -107,5 +107,10 @@ namespace MiamoDesktop.UI.WebFormsProduto
         {
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

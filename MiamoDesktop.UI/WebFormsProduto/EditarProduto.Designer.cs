@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarProduto));
             this.label1 = new System.Windows.Forms.Label();
             this.gpBox1 = new System.Windows.Forms.GroupBox();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
@@ -64,7 +65,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(168, 9);
+            this.label1.Location = new System.Drawing.Point(216, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(618, 73);
             this.label1.TabIndex = 2;
@@ -88,9 +89,9 @@
             this.gpBox1.Controls.Add(this.label3);
             this.gpBox1.Controls.Add(this.txtNomeProduto);
             this.gpBox1.Controls.Add(this.label2);
-            this.gpBox1.Location = new System.Drawing.Point(176, 103);
+            this.gpBox1.Location = new System.Drawing.Point(210, 103);
             this.gpBox1.Name = "gpBox1";
-            this.gpBox1.Size = new System.Drawing.Size(610, 546);
+            this.gpBox1.Size = new System.Drawing.Size(576, 546);
             this.gpBox1.TabIndex = 3;
             this.gpBox1.TabStop = false;
             // 
@@ -128,7 +129,7 @@
             // 
             this.txtFornecedorProduto.Location = new System.Drawing.Point(20, 497);
             this.txtFornecedorProduto.Name = "txtFornecedorProduto";
-            this.txtFornecedorProduto.Size = new System.Drawing.Size(256, 20);
+            this.txtFornecedorProduto.Size = new System.Drawing.Size(118, 20);
             this.txtFornecedorProduto.TabIndex = 26;
             // 
             // label9
@@ -157,7 +158,7 @@
             // 
             this.txtCorProduto.Location = new System.Drawing.Point(21, 349);
             this.txtCorProduto.Name = "txtCorProduto";
-            this.txtCorProduto.Size = new System.Drawing.Size(245, 20);
+            this.txtCorProduto.Size = new System.Drawing.Size(117, 20);
             this.txtCorProduto.TabIndex = 24;
             // 
             // label6
@@ -175,7 +176,7 @@
             // 
             this.txtPrecoProduto.Location = new System.Drawing.Point(19, 277);
             this.txtPrecoProduto.Name = "txtPrecoProduto";
-            this.txtPrecoProduto.Size = new System.Drawing.Size(247, 20);
+            this.txtPrecoProduto.Size = new System.Drawing.Size(119, 20);
             this.txtPrecoProduto.TabIndex = 23;
             // 
             // label5
@@ -194,7 +195,7 @@
             this.txtTamanhoProduto.Location = new System.Drawing.Point(19, 202);
             this.txtTamanhoProduto.MaxLength = 3;
             this.txtTamanhoProduto.Name = "txtTamanhoProduto";
-            this.txtTamanhoProduto.Size = new System.Drawing.Size(247, 20);
+            this.txtTamanhoProduto.Size = new System.Drawing.Size(119, 20);
             this.txtTamanhoProduto.TabIndex = 19;
             // 
             // label4
@@ -247,10 +248,10 @@
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.ForeColor = System.Drawing.Color.Blue;
-            this.btnPesquisar.Location = new System.Drawing.Point(30, 240);
+            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
+            this.btnPesquisar.Location = new System.Drawing.Point(32, 320);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(107, 41);
+            this.btnPesquisar.Size = new System.Drawing.Size(115, 41);
             this.btnPesquisar.TabIndex = 29;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -260,9 +261,9 @@
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.Red;
-            this.btnSair.Location = new System.Drawing.Point(34, 352);
+            this.btnSair.Location = new System.Drawing.Point(36, 397);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(87, 41);
+            this.btnSair.Size = new System.Drawing.Size(103, 41);
             this.btnSair.TabIndex = 30;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -270,7 +271,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(34, 172);
+            this.txtId.Location = new System.Drawing.Point(36, 264);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(111, 20);
             this.txtId.TabIndex = 28;
@@ -280,7 +281,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(29, 144);
+            this.label7.Location = new System.Drawing.Point(39, 236);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 25);
             this.label7.TabIndex = 31;
@@ -300,10 +301,10 @@
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ForeColor = System.Drawing.Color.Blue;
+            this.btnExcluir.ForeColor = System.Drawing.Color.Red;
             this.btnExcluir.Location = new System.Drawing.Point(18, 25);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(107, 41);
+            this.btnExcluir.Size = new System.Drawing.Size(101, 41);
             this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -312,10 +313,10 @@
             // btnConfirmar
             // 
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Blue;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.White;
             this.btnConfirmar.Location = new System.Drawing.Point(18, 92);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(107, 41);
+            this.btnConfirmar.Size = new System.Drawing.Size(101, 41);
             this.btnConfirmar.TabIndex = 11;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
@@ -324,7 +325,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Blue;
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(18, 158);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 41);
@@ -337,6 +338,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Turquoise;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.gpBox2);
             this.Controls.Add(this.btnPesquisar);
@@ -345,6 +349,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditarProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
