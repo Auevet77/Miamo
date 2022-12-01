@@ -108,6 +108,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
 
         }
 
+<<<<<<< HEAD
         private void txtPrecoProduto_Leave(object sender, EventArgs e)
         {
             try
@@ -127,5 +128,11 @@ namespace MiamoDesktop.UI.WebFormsProduto
         {
             txtPrecoProduto.Text = txtPrecoProduto.Text.Replace("R$ ","");            
         }
+=======
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 16d05d18459cea6a8c830363a53dd77ca1753d14
     }
 }
