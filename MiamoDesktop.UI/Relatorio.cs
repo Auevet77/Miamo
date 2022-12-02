@@ -21,7 +21,8 @@ namespace MiamoDesktop
         private Button btnSair;
         private Button btnExibirCategoria;
         private Button btnExibirProduto;
-        private Button btnExibir;
+        private Button btnPDF;
+        private Button btnExibirUsuario;
 
         public DataGridView DataGridView1 { get; private set; }
 
@@ -39,7 +40,8 @@ namespace MiamoDesktop
             this.btnExibirCategoria = new System.Windows.Forms.Button();
             this.btnExibirProduto = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnExibir = new System.Windows.Forms.Button();
+            this.btnExibirUsuario = new System.Windows.Forms.Button();
+            this.btnPDF = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -82,10 +84,12 @@ namespace MiamoDesktop
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Cyan;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.btnPDF);
             this.panel2.Controls.Add(this.btnExibirCategoria);
             this.panel2.Controls.Add(this.btnExibirProduto);
             this.panel2.Controls.Add(this.btnSair);
-            this.panel2.Controls.Add(this.btnExibir);
+            this.panel2.Controls.Add(this.btnExibirUsuario);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 527);
             this.panel2.Name = "panel2";
@@ -94,7 +98,9 @@ namespace MiamoDesktop
             // 
             // btnExibirCategoria
             // 
-            this.btnExibirCategoria.Location = new System.Drawing.Point(360, 23);
+            this.btnExibirCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExibirCategoria.ForeColor = System.Drawing.Color.Blue;
+            this.btnExibirCategoria.Location = new System.Drawing.Point(595, 23);
             this.btnExibirCategoria.Name = "btnExibirCategoria";
             this.btnExibirCategoria.Size = new System.Drawing.Size(108, 41);
             this.btnExibirCategoria.TabIndex = 3;
@@ -104,8 +110,9 @@ namespace MiamoDesktop
             // 
             // btnExibirProduto
             // 
-            this.btnExibirProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExibirProduto.Location = new System.Drawing.Point(199, 23);
+            this.btnExibirProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExibirProduto.ForeColor = System.Drawing.Color.Blue;
+            this.btnExibirProduto.Location = new System.Drawing.Point(426, 23);
             this.btnExibirProduto.Name = "btnExibirProduto";
             this.btnExibirProduto.Size = new System.Drawing.Size(105, 41);
             this.btnExibirProduto.TabIndex = 3;
@@ -116,7 +123,7 @@ namespace MiamoDesktop
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.ForeColor = System.Drawing.Color.Blue;
+            this.btnSair.ForeColor = System.Drawing.Color.Red;
             this.btnSair.Location = new System.Drawing.Point(869, 23);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(107, 41);
@@ -125,17 +132,27 @@ namespace MiamoDesktop
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // btnExibir
+            // btnExibirUsuario
             // 
-            this.btnExibir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExibir.ForeColor = System.Drawing.Color.Blue;
-            this.btnExibir.Location = new System.Drawing.Point(35, 23);
-            this.btnExibir.Name = "btnExibir";
-            this.btnExibir.Size = new System.Drawing.Size(107, 41);
-            this.btnExibir.TabIndex = 1;
-            this.btnExibir.Text = "Exibir";
-            this.btnExibir.UseVisualStyleBackColor = true;
-            this.btnExibir.Click += new System.EventHandler(this.btnExibir_Click);
+            this.btnExibirUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExibirUsuario.ForeColor = System.Drawing.Color.Blue;
+            this.btnExibirUsuario.Location = new System.Drawing.Point(265, 23);
+            this.btnExibirUsuario.Name = "btnExibirUsuario";
+            this.btnExibirUsuario.Size = new System.Drawing.Size(107, 41);
+            this.btnExibirUsuario.TabIndex = 1;
+            this.btnExibirUsuario.Text = "Usuários";
+            this.btnExibirUsuario.UseVisualStyleBackColor = true;
+            this.btnExibirUsuario.Click += new System.EventHandler(this.btnExibir_Click);
+            // 
+            // btnPDF
+            // 
+            this.btnPDF.Location = new System.Drawing.Point(45, 32);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(75, 23);
+            this.btnPDF.TabIndex = 4;
+            this.btnPDF.Text = "Gerar PDF";
+            this.btnPDF.UseVisualStyleBackColor = true;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
             // 
             // Relatorio
             // 
@@ -143,7 +160,9 @@ namespace MiamoDesktop
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Relatorio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Relatorio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -191,7 +210,7 @@ namespace MiamoDesktop
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void btnExibirProduto_Click(object sender, EventArgs e)
@@ -204,6 +223,16 @@ namespace MiamoDesktop
         {
             CategoriaBLL objCAT = new CategoriaBLL();
             dataGridView1.DataSource = objCAT.ListarCategoria();
+        }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = lblTitulo.Text;
+            printer.PageNumbers = true;
+            printer.PorpotionalColuns = true;
+            printer.Footer = DateTime.Now.ToString();
+            printer.PrintDataGridView(DataGridView1);
         }
     }
 }

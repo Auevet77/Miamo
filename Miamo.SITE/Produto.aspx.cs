@@ -21,7 +21,7 @@ namespace Miamo.SITE
 
             lblNome.Text = produtoDTO.NomeProduto;
             lblTamanho.Text = produtoDTO.TamanhoProduto;
-            lblPreco.Text = produtoDTO.PrecoProduto;
+            lblPreco.Text = produtoDTO.PrecoProduto.ToString();            
             lblCor.Text = produtoDTO.CorProduto;
             lblCategoriaProduto.Text = produtoDTO.CategoriaProduto;
             lblDescricao.Text = produtoDTO.DescricaoProduto;

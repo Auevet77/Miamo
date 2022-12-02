@@ -38,6 +38,8 @@ namespace MiamoDesktop
         private ToolStripMenuItem usuarioToolStripMenuItem;
         private ToolStripMenuItem produtoToolStripMenuItem1;
         private ToolStripMenuItem categoriaToolStripMenuItem1;
+        private ToolStripMenuItem abrirOSiteMiamoToolStripMenuItem;
+        private ToolStripMenuItem abrirMiamoUIToolStripMenuItem;
         private Panel panel1;
 
         public MainAdm()
@@ -72,6 +74,8 @@ namespace MiamoDesktop
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.abrirOSiteMiamoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirMiamoUIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -86,6 +90,9 @@ namespace MiamoDesktop
             // 
             // utilitáriosToolStripMenuItem
             // 
+            this.utilitáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirOSiteMiamoToolStripMenuItem,
+            this.abrirMiamoUIToolStripMenuItem});
             this.utilitáriosToolStripMenuItem.Name = "utilitáriosToolStripMenuItem";
             this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.utilitáriosToolStripMenuItem.Text = "&Utilitários";
@@ -93,7 +100,7 @@ namespace MiamoDesktop
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.usuárioToolStripMenuItem.Text = "Exibir Relatorio";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
@@ -280,12 +287,26 @@ namespace MiamoDesktop
             this.panel1.Size = new System.Drawing.Size(1270, 614);
             this.panel1.TabIndex = 2;
             // 
+            // abrirOSiteMiamoToolStripMenuItem
+            // 
+            this.abrirOSiteMiamoToolStripMenuItem.Name = "abrirOSiteMiamoToolStripMenuItem";
+            this.abrirOSiteMiamoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirOSiteMiamoToolStripMenuItem.Text = "Abrir o site Miamo";
+            this.abrirOSiteMiamoToolStripMenuItem.Click += new System.EventHandler(this.abrirOSiteMiamoToolStripMenuItem_Click);
+            // 
+            // abrirMiamoUIToolStripMenuItem
+            // 
+            this.abrirMiamoUIToolStripMenuItem.Name = "abrirMiamoUIToolStripMenuItem";
+            this.abrirMiamoUIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirMiamoUIToolStripMenuItem.Text = "Abrir Miamo.UI";
+            this.abrirMiamoUIToolStripMenuItem.Click += new System.EventHandler(this.abrirMiamoUIToolStripMenuItem_Click);
+            // 
             // MainAdm
             // 
             this.ClientSize = new System.Drawing.Size(1270, 638);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainAdm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainAdm_Load);
@@ -379,6 +400,16 @@ namespace MiamoDesktop
             EditarCategoria obj = new EditarCategoria();
             obj.ShowDialog();
 
+        }
+
+        private void abrirOSiteMiamoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://localhost:52139/Default.aspx");
+        }
+
+        private void abrirMiamoUIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://localhost:54846/Pages/Login.aspx");
         }
     }
 }
