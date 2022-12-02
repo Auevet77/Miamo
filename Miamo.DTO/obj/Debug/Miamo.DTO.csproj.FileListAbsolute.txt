@@ -22,9 +22,3 @@ C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.A
 C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.CoreCompileInputs.cache
 C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\obj\Debug\Miamo.DTO.dll
 C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.DTO\obj\Debug\Miamo.DTO.pdb
-C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DTO\bin\Debug\Miamo.DTO.dll
-C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DTO\bin\Debug\Miamo.DTO.pdb
-C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.AssemblyReference.cache
-C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.CoreCompileInputs.cache
-C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DTO\obj\Debug\Miamo.DTO.dll
-C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DTO\obj\Debug\Miamo.DTO.pdb
