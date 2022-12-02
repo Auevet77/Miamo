@@ -18,7 +18,7 @@ namespace MiamoDesktop.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CadastrarProduto());
+            Application.Run(new Login());
         }
     }
 }

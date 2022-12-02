@@ -7,8 +7,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using System.Threading;
 
 namespace MiamoDesktop
 {
@@ -16,11 +18,22 @@ namespace MiamoDesktop
     {
         public Login()
         {
+            Thread t = new Thread(new ThreadStart(StartForms));
+            t.Start();
+            Thread.Sleep(5000);
+            t.Abort();
+
             InitializeComponent();
+        }
+
+        public void StartForms()
+        {
+            Application.Run(new SplashScreen());
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
+            //this.Activate();
             txtUsuario.Focus();
         }
 
