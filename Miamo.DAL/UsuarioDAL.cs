@@ -44,7 +44,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdUsuario, NomeUsuario, SenhaUsuario, EmailUsuario,DescricaoTpUsuario FROM Usuario JOIN TpUsuario ON FKTpUsuario=IdTpUsuario", conn);
+                cmd = new SqlCommand("SELECT IdUsuario,NomeUsuario,SenhaUsuario,EmailUsuario,DescricaoTpUsuario FROM Usuario AS Usu JOIN TpUsuario AS TipoUsuario ON Usu.IdTpUsuario = TipoUsuario.IdTpUsuario", conn);
                 dr = cmd.ExecuteReader();
                 List<UsuarioListDTO> Lista = new List<UsuarioListDTO>();//criando lista vazia
 

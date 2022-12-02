@@ -35,7 +35,7 @@
                     <asp:Label runat="server" Text='<%#Eval("TamanhoProduto") %>' />
                 </ItemTemplate>
                 <EditItemTemplate>
-                    <asp:TextBox ID="txtTamanhoProduto" runat="server" MaxLength="50" Text='<%#Eval("TamanhoProduto") %>' />
+                    <asp:TextBox ID="txtTamanhoProduto" runat="server" MaxLength="50" Text='<%#Eval("TamanhoProduto") %>'/>
                 </EditItemTemplate>
                 <FooterTemplate>
                     <asp:TextBox ID="txtTamanhoProdutoFooter" runat="server" />
@@ -47,7 +47,7 @@
                     <asp:Label runat="server" Text='<%#Eval("PrecoProduto") %>' />
                 </ItemTemplate>
                 <EditItemTemplate>
-                    <asp:TextBox ID="txtPrecoProduto" runat="server" MaxLength="50" Text='<%#Eval("PrecoProduto") %>' />
+                    <asp:TextBox ID="txtPrecoProduto" runat="server" MaxLength="50" Text='<%#Eval("PrecoProduto") %>'/>
                 </EditItemTemplate>
                 <FooterTemplate>
                     <asp:TextBox ID="txtPrecoProdutoFooter" runat="server" />
@@ -88,7 +88,7 @@
                     <asp:DropDownList ID="ddl1" runat="server">
 
                         <asp:ListItem Selected="True" Text="Selecione" />                        
-                        <asp:ListItem Value="1" Text="Lançamentos" />
+                        <asp:ListItem Value="1" runat="server" Text="?" />
                         <asp:ListItem Value="2" Text="Modeladores" />
                         <asp:ListItem Value="3" Text="Camisolas" />
                         <asp:ListItem Value="4" Text="Calcinhas & Fios" />
@@ -109,7 +109,6 @@
                         <asp:ListItem Value="5" Text="Lingeries" />
                         <asp:ListItem Value="6" Text="Sutiãs" />
                         <asp:ListItem Value="7" Text="Outros" />
-
                     </asp:DropDownList>
                 </FooterTemplate>
             </asp:TemplateField>

@@ -165,5 +165,24 @@ namespace MiamoDesktop.UI.WebFormsProduto
                 picBox1.ImageLocation = img;
             }
         }
+
+        private void txtPrecoProduto_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal Valor = Convert.ToDecimal(txtPrecoProduto.Text.Replace("R$", ""));
+                txtPrecoProduto.Text = Valor.ToString("C2");
+
+            }
+            catch
+            {
+                txtPrecoProduto.Text = "";
+            }
+        }
+
+        private void txtPrecoProduto_Enter(object sender, EventArgs e)
+        {
+            txtPrecoProduto.Text = txtPrecoProduto.Text.Replace("R$ ", "");
+        }
     }
 }

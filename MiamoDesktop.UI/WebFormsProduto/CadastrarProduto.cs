@@ -53,8 +53,8 @@ namespace MiamoDesktop.UI.WebFormsProduto
             objCAD.IdFornecedor = Convert.ToInt32(txtFornecedorProduto.Text);
 
             //salvando a URL da imagem
-            string nomeImg = txtNomeProduto.Text + ".jpg";
-            string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo3\MiamoDesktop.UI\Img";
+            string nomeImg = txtNomeProduto.Text + ".jpg";            
+            string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo\MiamoDesktop.UI\Img";
             string caminhoImg = Path.Combine(pasta, nomeImg);
             objCAD.UrlImagemProduto = caminhoImg;
 
@@ -108,7 +108,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
 
         }
 
-<<<<<<< HEAD
+
         private void txtPrecoProduto_Leave(object sender, EventArgs e)
         {
             try
@@ -128,11 +128,11 @@ namespace MiamoDesktop.UI.WebFormsProduto
         {
             txtPrecoProduto.Text = txtPrecoProduto.Text.Replace("R$ ","");            
         }
-=======
+
         private void label9_Click(object sender, EventArgs e)
         {
 
         }
->>>>>>> 16d05d18459cea6a8c830363a53dd77ca1753d14
+
     }
 }

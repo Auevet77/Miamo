@@ -102,7 +102,7 @@
             this.cboCategoria.Location = new System.Drawing.Point(20, 420);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(256, 28);
-            this.cboCategoria.TabIndex = 25;
+            this.cboCategoria.TabIndex = 9;
             // 
             // btnImagem
             // 
@@ -111,7 +111,7 @@
             this.btnImagem.Location = new System.Drawing.Point(312, 306);
             this.btnImagem.Name = "btnImagem";
             this.btnImagem.Size = new System.Drawing.Size(255, 34);
-            this.btnImagem.TabIndex = 27;
+            this.btnImagem.TabIndex = 11;
             this.btnImagem.Text = "Selecionar Imagem";
             this.btnImagem.UseVisualStyleBackColor = true;
             this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
@@ -130,7 +130,7 @@
             this.txtFornecedorProduto.Location = new System.Drawing.Point(20, 497);
             this.txtFornecedorProduto.Name = "txtFornecedorProduto";
             this.txtFornecedorProduto.Size = new System.Drawing.Size(118, 20);
-            this.txtFornecedorProduto.TabIndex = 26;
+            this.txtFornecedorProduto.TabIndex = 10;
             // 
             // label9
             // 
@@ -159,7 +159,7 @@
             this.txtCorProduto.Location = new System.Drawing.Point(21, 349);
             this.txtCorProduto.Name = "txtCorProduto";
             this.txtCorProduto.Size = new System.Drawing.Size(117, 20);
-            this.txtCorProduto.TabIndex = 24;
+            this.txtCorProduto.TabIndex = 8;
             // 
             // label6
             // 
@@ -177,7 +177,9 @@
             this.txtPrecoProduto.Location = new System.Drawing.Point(19, 277);
             this.txtPrecoProduto.Name = "txtPrecoProduto";
             this.txtPrecoProduto.Size = new System.Drawing.Size(119, 20);
-            this.txtPrecoProduto.TabIndex = 23;
+            this.txtPrecoProduto.TabIndex = 7;
+            this.txtPrecoProduto.Enter += new System.EventHandler(this.txtPrecoProduto_Enter);
+            this.txtPrecoProduto.Leave += new System.EventHandler(this.txtPrecoProduto_Leave);
             // 
             // label5
             // 
@@ -196,7 +198,7 @@
             this.txtTamanhoProduto.MaxLength = 3;
             this.txtTamanhoProduto.Name = "txtTamanhoProduto";
             this.txtTamanhoProduto.Size = new System.Drawing.Size(119, 20);
-            this.txtTamanhoProduto.TabIndex = 19;
+            this.txtTamanhoProduto.TabIndex = 6;
             // 
             // label4
             // 
@@ -214,7 +216,7 @@
             this.txtDescricaoProduto.Location = new System.Drawing.Point(19, 125);
             this.txtDescricaoProduto.Name = "txtDescricaoProduto";
             this.txtDescricaoProduto.Size = new System.Drawing.Size(247, 20);
-            this.txtDescricaoProduto.TabIndex = 14;
+            this.txtDescricaoProduto.TabIndex = 5;
             // 
             // label3
             // 
@@ -232,7 +234,7 @@
             this.txtNomeProduto.Location = new System.Drawing.Point(19, 58);
             this.txtNomeProduto.Name = "txtNomeProduto";
             this.txtNomeProduto.Size = new System.Drawing.Size(247, 20);
-            this.txtNomeProduto.TabIndex = 13;
+            this.txtNomeProduto.TabIndex = 4;
             // 
             // label2
             // 
@@ -252,7 +254,7 @@
             this.btnPesquisar.Location = new System.Drawing.Point(32, 320);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(115, 41);
-            this.btnPesquisar.TabIndex = 29;
+            this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -264,7 +266,7 @@
             this.btnSair.Location = new System.Drawing.Point(36, 397);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(103, 41);
-            this.btnSair.TabIndex = 30;
+            this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -274,7 +276,7 @@
             this.txtId.Location = new System.Drawing.Point(36, 264);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(111, 20);
-            this.txtId.TabIndex = 28;
+            this.txtId.TabIndex = 1;
             // 
             // label7
             // 
@@ -305,7 +307,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(18, 25);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(101, 41);
-            this.btnExcluir.TabIndex = 10;
+            this.btnExcluir.TabIndex = 12;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -317,7 +319,7 @@
             this.btnConfirmar.Location = new System.Drawing.Point(18, 92);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(101, 41);
-            this.btnConfirmar.TabIndex = 11;
+            this.btnConfirmar.TabIndex = 13;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
@@ -329,7 +331,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(18, 158);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 41);
-            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.TabIndex = 14;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
