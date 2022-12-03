@@ -94,7 +94,6 @@ footer {
 
 
 .footerC {
-    position: relative;
     display: flex;
     justify-content: space-around;
     justify-items: center;
@@ -172,26 +171,44 @@ footer {
 }
 
 .fundo {
-    background-color: #18d4c9;
+  display:flex;
+  justify-content:center;
+  background-image: url(../Img/imgCatalogo/fotosnovas/04.jpg);
+  background-repeat: repeat-x;
+  align-items:center;
+  
+  
 }
 
-.text-light {
-    color: white;
-    text-shadow: 2px 2px 0px black;
+.text-luz {
+    color: black !important; 
+    text-shadow: 2px 2px 0px White;
     text-align: center;
+    font-size:30px;
+    
 }
 
-/*.Centro{
+.Centro {
+    width: 60%;
+    display: inline-block;
+    align-items: center;
+    background-color: aqua;
+    height: 900px;
     text-align:center;
-}*/
+    color:black;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
 
-/*#txtNome {
+/*#txtNome,#txtEmail {
     display:flex;
     padding: 0;
     margin: 0;
     align-content: center;
-}*/
 
+}
+*/
 
 .nav-item {
     margin: auto;
@@ -236,8 +253,15 @@ footer {
     }
 
 
+.MenuBTN {
+    margin-right: 30px;
+    text-align: center;
+}
 
-
-
-
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start !important;
+}
 

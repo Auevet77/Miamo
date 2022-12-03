@@ -41,63 +41,11 @@
     />
     <!-- font italica -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-<%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>--%>
-    <!-- JavaScript Bundle with Popper -->
-<%--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </head>--%>
 
  <body>
-    <%--<header>
-      <nav  class="navbar navbar-expand-lg fixed-top">
-        <div id="nav.menu" class="container-fluid">
-          <a href="index.html"><img id="logo" src="img/index/LogoMiamo.gif" alt="logo MIAMO" /></a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                Veja Mais
-              </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li class="dropdown-item"><a href="#lancamentos">Novidades</a></li>
-              <li class="dropdown-item"><a href="#polaroids">Nossos Produtos</a></li>
-              <li class="dropdown-item"><a href="#mapa-conteudo">Nossa Localização</a></li>
-              <li class="dropdown-item"><a href="#sbr-empresa">Sobre á Empresa</a></li>
-          
-            </ul>
-            </li>
-            </ul>
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-              Catálogo
-            </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="dropdown-item"><a href="catalogo.html#nav-lancamentos">Lançamentos</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-modeladores">Modeladores</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-camisolas">Camisolas</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-calcinhas">Calcinhas & Fios</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-lingieries">Lingieries</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-sutias">Sutiãs</a></li>
-          </ul>
-          </li>
-            <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
-          </ul>
-
-          
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="O Que Procura?" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Procurar</button>
-          </form>
-
-          </div>
-
-      </nav>
-    </header>--%>
+  
 
      
 

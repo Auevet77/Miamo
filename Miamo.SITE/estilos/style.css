@@ -55,6 +55,7 @@ img{
 
 .navbar {
     background-color: rgba(240, 240, 240, 0.753);
+
     
 }
 
@@ -518,184 +519,6 @@ margin-bottom: 50px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1125,3 +948,26 @@ textarea {
     background-color:aquamarine !important ActiveBorder; 
 }
 /* azul */
+
+
+
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+
+.MenuBTN{
+    margin-right:30px;
+    text-align:center;
+    padding-right:30px;
+}
+
+.navbar-expand-lg{
+    justify-content:flex-end;
+}
+
+@media(min-width:900px){
+    .navbar-expand-lg {
+        justify-content: flex-end;
+    }
+
+}
