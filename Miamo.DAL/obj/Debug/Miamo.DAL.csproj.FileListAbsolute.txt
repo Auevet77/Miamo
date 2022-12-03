@@ -61,3 +61,12 @@ C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.csp
 C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.CopyComplete
 C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.dll
 C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.pdb
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DAL.dll
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DAL.pdb
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DTO.dll
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DTO.pdb
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.AssemblyReference.cache
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.CopyComplete
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.dll
+C:\Users\Italo\Source\Repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.pdb
