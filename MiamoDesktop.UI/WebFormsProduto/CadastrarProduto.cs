@@ -54,7 +54,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
 
             //salvando a URL da imagem
             string nomeImg = txtNomeProduto.Text + ".jpg";            
-            string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo\MiamoDesktop.UI\Img";
+            string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.SITE\Img";
             string caminhoImg = Path.Combine(pasta, nomeImg);
             objCAD.UrlImagemProduto = caminhoImg;
 

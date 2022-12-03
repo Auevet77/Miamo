@@ -25,7 +25,7 @@ namespace Miamo.SITE
             lblCor.Text = produtoDTO.CorProduto;
             lblCategoriaProduto.Text = produtoDTO.CategoriaProduto;
             lblDescricao.Text = produtoDTO.DescricaoProduto;
-            imgProduto.ImageUrl = produtoDTO.UrlImagemProduto.Replace("~", ".");
+            imgProduto.ImageUrl = "Img\\" + produtoDTO.UrlImagemProduto.Split('\\').Last();
 
         }
     }

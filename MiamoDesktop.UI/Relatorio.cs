@@ -37,11 +37,11 @@ namespace MiamoDesktop
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.btnExibirCategoria = new System.Windows.Forms.Button();
             this.btnExibirProduto = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnExibirUsuario = new System.Windows.Forms.Button();
-            this.btnPDF = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -96,6 +96,17 @@ namespace MiamoDesktop
             this.panel2.Size = new System.Drawing.Size(1015, 86);
             this.panel2.TabIndex = 4;
             // 
+            // btnPDF
+            // 
+            this.btnPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPDF.Location = new System.Drawing.Point(45, 23);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(107, 41);
+            this.btnPDF.TabIndex = 4;
+            this.btnPDF.Text = "Gerar PDF";
+            this.btnPDF.UseVisualStyleBackColor = true;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
             // btnExibirCategoria
             // 
             this.btnExibirCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,16 +154,6 @@ namespace MiamoDesktop
             this.btnExibirUsuario.Text = "Usuários";
             this.btnExibirUsuario.UseVisualStyleBackColor = true;
             this.btnExibirUsuario.Click += new System.EventHandler(this.btnExibir_Click);
-            // 
-            // btnPDF
-            // 
-            this.btnPDF.Location = new System.Drawing.Point(45, 32);
-            this.btnPDF.Name = "btnPDF";
-            this.btnPDF.Size = new System.Drawing.Size(75, 23);
-            this.btnPDF.TabIndex = 4;
-            this.btnPDF.Text = "Gerar PDF";
-            this.btnPDF.UseVisualStyleBackColor = true;
-            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
             // 
             // Relatorio
             // 
@@ -232,7 +233,7 @@ namespace MiamoDesktop
             printer.PageNumbers = true;
             printer.PorpotionalColuns = true;
             printer.Footer = DateTime.Now.ToString();
-            printer.PrintDataGridView(DataGridView1);
+            printer.PrintDataGridView(dataGridView1);
         }
     }
 }

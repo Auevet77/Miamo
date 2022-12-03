@@ -404,12 +404,12 @@ namespace MiamoDesktop
 
         private void abrirOSiteMiamoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://localhost:52139/Default.aspx");
+            System.Diagnostics.Process.Start("https://miamo.azurewebsites.net");
         }
 
         private void abrirMiamoUIToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://localhost:54846/Pages/Login.aspx");
+            System.Diagnostics.Process.Start("https://ge.globo.com/");
         }
     }
 }

@@ -116,8 +116,7 @@ namespace MiamoDesktop.UI.WebFormsProduto
             if (picBox1.Image != null)
             {
                 string nomeImg = txtNomeProduto.Text + ".jpg";
-                string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo\MiamoDesktop.UI\Img";
-                //string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo\MiamoDesktop.UI\Img";
+                string pasta = @"C:\Users\romilson.gmonteiro\source\repos\Miamo\Miamo.SITE\Img";              
                 string caminhoImg = Path.Combine(pasta, nomeImg);
                 objPesquisa.UrlImagemProduto = caminhoImg;
 
