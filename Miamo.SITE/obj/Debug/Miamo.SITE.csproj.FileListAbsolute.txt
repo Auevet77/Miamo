@@ -1,5 +1,3 @@
-C:\Users\Romilson\source\repos\Miamo\Miamo.SITE\obj\Debug\Miamo.SITE.csproj.AssemblyReference.cache
-C:\Users\Romilson\source\repos\Miamo\Miamo.SITE\obj\Debug\Miamo.SITE.csproj.CoreCompileInputs.cache
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\Miamo.SITE\bin\Miamo.SITE.dll.config
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\Miamo.SITE\bin\Miamo.SITE.dll
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo1\Miamo.SITE\bin\Miamo.SITE.pdb

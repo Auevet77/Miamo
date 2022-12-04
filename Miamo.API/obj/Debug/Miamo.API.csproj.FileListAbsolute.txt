@@ -1,5 +1,3 @@
-C:\Users\Romilson\source\repos\Miamo\Miamo.API\obj\Debug\Miamo.API.csproj.AssemblyReference.cache
-C:\Users\Romilson\source\repos\Miamo\Miamo.API\obj\Debug\Miamo.API.csproj.CoreCompileInputs.cache
 C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.API\bin\Miamo.API.dll.config
 C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.API\bin\Miamo.API.dll
 C:\Users\italo.qfsousa\source\repos\Miamo\Miamo.API\bin\Miamo.API.pdb

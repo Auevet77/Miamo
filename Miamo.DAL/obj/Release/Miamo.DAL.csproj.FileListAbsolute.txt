@@ -16,3 +16,12 @@ C:\Users\romilson.gmonteiro\Source\Repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.c
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.csproj.CopyComplete
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.dll
 C:\Users\romilson.gmonteiro\Source\Repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.pdb
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\bin\Release\Miamo.DAL.dll
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\bin\Release\Miamo.DAL.pdb
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\bin\Release\Miamo.DTO.dll
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\bin\Release\Miamo.DTO.pdb
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.csproj.AssemblyReference.cache
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.csproj.CopyComplete
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.dll
+C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Release\Miamo.DAL.pdb

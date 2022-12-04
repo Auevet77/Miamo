@@ -41,100 +41,108 @@
     />
     <!-- font italica -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </head>
 
  <body>
-    <header>
-      <nav  class="navbar navbar-expand-lg fixed-top">
-        <div id="nav.menu" class="container-fluid">
-          <a href="index.html"><img id="logo" src="img/index/LogoMiamo.gif" alt="logo MIAMO" /></a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                Veja Mais
-              </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li class="dropdown-item"><a href="#lancamentos">Novidades</a></li>
-              <li class="dropdown-item"><a href="#polaroids">Nossos Produtos</a></li>
-              <li class="dropdown-item"><a href="#mapa-conteudo">Nossa Localização</a></li>
-              <li class="dropdown-item"><a href="#sbr-empresa">Sobre á Empresa</a></li>
-          
-            </ul>
-            </li>
-            </ul>
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-              Catálogo
-            </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="dropdown-item"><a href="catalogo.html#nav-lancamentos">Lançamentos</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-modeladores">Modeladores</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-camisolas">Camisolas</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-calcinhas">Calcinhas & Fios</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-lingieries">Lingieries</a></li>
-            <li class="dropdown-item"><a href="catalogo.html#nav-sutias">Sutiãs</a></li>
-          </ul>
-          </li>
-            <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
-          </ul>
-
-          
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="O Que Procura?" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Procurar</button>
-          </form>
-
-          </div>
-
-      </nav>
-    </header>
+  
 
      
 
 
     <main>
-
-      <%--      <div class="container">
-        <div  id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-           <%-- Indicators--%>
-            <%--<ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                          <asp:Repeater ID="rptrImages" runat="server">
-                    <ItemTemplate>
-                        <div class="item <%#GetActiveClass(Container.ItemIndex) %>">
-                            <img src="Img/index/<%#Eval("NomeIMG") %><%#Eval("ExtensaoImg") %>" alt="<%#Eval("NomeIMG") %>" />
-                        </div>
-                    </ItemTemplate>
-                </asp:Repeater>
+      <section class="slider">
+        <div class="container-fluid header">
+          <div class="row">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="img/index/bannerteste.jpg"
+                    alt="Primeiro Slide"
+                  />
+                  <!-- <div class="carousel-caption d-none d-md-block"> -->
+                  <div class="carousel-caption text-left">
+                    <h2 class="mb-sm-1 mb-lg-2 mb-xl-5 texto font-italic"></h2>
+                    <p class="font-italic texto"></p>
+                    <p class="font-italic texto"></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="img/index/bannerteste.jpg"
+                    alt="Segundo Slide"
+                  />
+                  <div class="carousel-caption text-left">
+                    <h2 class="mb-sm-1 mb-lg-2 mb-xl-5 texto font-italic"></h2>
+                    <p class="font-italic texto"></p>
+                    <p class="font-italic texto"></p>
+                    <p class="font-italic texto"></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="img/index/bannerteste.jpg"
+                    alt="Terceiro Slide"
+                  />
+                  <div class="carousel-caption text-left">
+                    <h2 class="mb-sm-1 mb-lg-2 mb-xl-5 texto font-italic"></h2>
+                    <p class="font-italic texto"></p >
+                    <p class="font-italic texto"></p>
+                    <p class="font-italic texto"></p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Próximo</span>
+              </a>
             </div>
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>--%>
-
-      <%--  </div>
-    </div>--%>
+          </div>
+        </div>
+      </section>
 
                      
 
@@ -153,37 +161,37 @@
           
         <div class="conteudoAoMeio grid">
           <div class="anuncio">
-            <a href="#" id="grayscale"><img src="img/imgCatalogo/fotosnovas/11.jpg" alt=""></a>
+            <a href="Catalogo.aspx" id="grayscale"><img src="img/imgCatalogo/fotosnovas/11.jpg" alt=""></a>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam?</span>
           </div>
           <div class="anuncio2"> 
-            <a href="#" id="grayscale"><img src="img/imgCatalogo/fotosnovas/01.jpg" alt=""></a>
+            <a href="Catalogo.aspx" id="grayscale"><img src="img/imgCatalogo/fotosnovas/01.jpg" alt=""></a>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam?</span>
           </div>
           <div class="itemgrid1">
-            <a href="#" id="grayscale"><img src="img/imgCatalogo/fotosnovas/03.jpg" alt=""></a>
+            <a href="Catalogo.aspx" id="grayscale"><img src="img/imgCatalogo/fotosnovas/03.jpg" alt=""></a>
             <p>Lorem ipsum dolor sit amet, consecteturis omnis ente animi provident. Eni </p>
           </div>
           <div class="itemgrid1">
-            <a href="#" id="grayscale"><img src="img/imgCatalogo/fotosnovas/05.jpg" alt=""></a>
+            <a href="Catalogo.aspx" id="grayscale"><img src="img/imgCatalogo/fotosnovas/05.jpg" alt=""></a>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam?</span>
           </div>
           <div class="itemgrid">
-            <a href="#" id="grayscale"><img src="img/imgCatalogo/fotosnovas/04.jpg" alt=""></a>
+            <a href="Catalogo.aspx" id="grayscale"><img src="img/imgCatalogo/fotosnovas/04.jpg" alt=""></a>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam?</span>
           </div>
           <div class="itemgrid">
-            <a href="#" id="grayscale"><img src="img/imgCatalogo/fotosnovas/02.jpg" alt=""></a>
+            <a href="Catalogo.aspx" id="grayscale"><img src="img/imgCatalogo/fotosnovas/02.jpg" alt=""></a>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam?</span>
           </div class="itemgrid">
   
           <div class="itemgrid">
-            <a href="#" id="grayscale"><img src="img/imgCatalogo/fotosnovas/12.jpg" alt=""></a>
+            <a href="Catalogo.aspx" id="grayscale"><img src="img/imgCatalogo/fotosnovas/12.jpg" alt=""></a>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam?</span>
           </div>
   
           <div class="itemgrid">
-            <a href="#" id="grayscale"><img src="img/imgCatalogo/fotosnovas/13.jpg" alt=""></a>
+            <a href="Catalogo.aspx" id="grayscale"><img src="img/imgCatalogo/fotosnovas/13.jpg" alt=""></a>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
           
@@ -290,7 +298,7 @@
             <div class="image_title">Roupas Noturnas</div>
             <p class="image_description"> </p>
             <button class="custom-btn btn-15">
-              <a href="catalogo.html#nav-lancamentos">Ir para Catalogo</a>
+              <a href="Catalogo.aspx">Ir para Catalogo</a>
             </button>
             
         </div>
@@ -306,7 +314,7 @@
           <div class="image_title">Calcinhas</div>
           <p class="image_description"> </p>
           <button class="custom-btn btn-14">
-            <a href="catalogo.html#nav-calcinhas">Ir para Catalogo</a>
+            <a href="Catalogo.aspx">Ir para Catalogo</a>
           </button>
       </div>
           
@@ -322,7 +330,7 @@
           <div class="image_title">Modeladores</div>
           <p class="image_description"> </p>
           <button class="custom-btn btn-15">
-            <a href="catalogo.html#nav-modeladores">Ir para Catalogo</a>
+            <a href="Catalogo.aspx">Ir para Catalogo</a>
           </button>
       </div>
 
@@ -340,7 +348,7 @@
           <div class="image_title">LINGIERI</div>
           <p class="image_description"> </p>
           <button class="custom-btn btn-14">
-            <a href="catalogo.html#nav-lingieries">Ir para Catalogo</a>
+            <a href="Catalogo.aspx">Ir para Catalogo</a>
           </button>
       </div>
       </section>
@@ -354,7 +362,7 @@
           <div class="image_title">Camisolas</div>
           <p class="image_description"> </p>
           <button class="custom-btn btn-15">
-            <a href="catalogo.html#nav-camisolas">Ir para Catalogo</a>
+            <a href="Catalogo.aspx">Ir para Catalogo</a>
           </button>
       </div>
       </section>
@@ -367,7 +375,7 @@
           <div class="image_title">Sutiãs</div>
           <p class="image_description"> </p>
           <button class="custom-btn btn-14">
-            <a href="catalogo.html#nav-sutias">Ir para Catalogo</a>
+            <a href="Catalogo.aspx">Ir para Catalogo</a>
           </button>
       </div>
     
@@ -391,7 +399,7 @@
     </aside>
 
 
-    <%--<script src="js/jquery-3.6.0.min.js"></script>
+<%--    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"

@@ -52,6 +52,8 @@ namespace MiamoDesktop
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainAdm));
             this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirOSiteMiamoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirMiamoUIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,8 +76,6 @@ namespace MiamoDesktop
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.abrirOSiteMiamoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirMiamoUIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -96,6 +96,20 @@ namespace MiamoDesktop
             this.utilitáriosToolStripMenuItem.Name = "utilitáriosToolStripMenuItem";
             this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.utilitáriosToolStripMenuItem.Text = "&Utilitários";
+            // 
+            // abrirOSiteMiamoToolStripMenuItem
+            // 
+            this.abrirOSiteMiamoToolStripMenuItem.Name = "abrirOSiteMiamoToolStripMenuItem";
+            this.abrirOSiteMiamoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.abrirOSiteMiamoToolStripMenuItem.Text = "Abrir o site Miamo";
+            this.abrirOSiteMiamoToolStripMenuItem.Click += new System.EventHandler(this.abrirOSiteMiamoToolStripMenuItem_Click);
+            // 
+            // abrirMiamoUIToolStripMenuItem
+            // 
+            this.abrirMiamoUIToolStripMenuItem.Name = "abrirMiamoUIToolStripMenuItem";
+            this.abrirMiamoUIToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.abrirMiamoUIToolStripMenuItem.Text = "Abrir Miamo.UI";
+            this.abrirMiamoUIToolStripMenuItem.Click += new System.EventHandler(this.abrirMiamoUIToolStripMenuItem_Click);
             // 
             // usuárioToolStripMenuItem
             // 
@@ -287,26 +301,13 @@ namespace MiamoDesktop
             this.panel1.Size = new System.Drawing.Size(1270, 614);
             this.panel1.TabIndex = 2;
             // 
-            // abrirOSiteMiamoToolStripMenuItem
-            // 
-            this.abrirOSiteMiamoToolStripMenuItem.Name = "abrirOSiteMiamoToolStripMenuItem";
-            this.abrirOSiteMiamoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.abrirOSiteMiamoToolStripMenuItem.Text = "Abrir o site Miamo";
-            this.abrirOSiteMiamoToolStripMenuItem.Click += new System.EventHandler(this.abrirOSiteMiamoToolStripMenuItem_Click);
-            // 
-            // abrirMiamoUIToolStripMenuItem
-            // 
-            this.abrirMiamoUIToolStripMenuItem.Name = "abrirMiamoUIToolStripMenuItem";
-            this.abrirMiamoUIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.abrirMiamoUIToolStripMenuItem.Text = "Abrir Miamo.UI";
-            this.abrirMiamoUIToolStripMenuItem.Click += new System.EventHandler(this.abrirMiamoUIToolStripMenuItem_Click);
-            // 
             // MainAdm
             // 
             this.ClientSize = new System.Drawing.Size(1270, 638);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainAdm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainAdm_Load);

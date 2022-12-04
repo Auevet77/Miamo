@@ -1,12 +1,3 @@
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.AssemblyReference.cache
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.CoreCompileInputs.cache
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DAL.dll
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DAL.pdb
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DTO.dll
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DTO.pdb
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.CopyComplete
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.dll
-C:\Users\Romilson\source\repos\Miamo\Miamo.DAL\obj\Debug\Miamo.DAL.pdb
 C:\Users\welber.osilva\source\repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DAL.dll
 C:\Users\welber.osilva\source\repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DAL.pdb
 C:\Users\welber.osilva\source\repos\Miamo\Miamo.DAL\bin\Debug\Miamo.DTO.dll
