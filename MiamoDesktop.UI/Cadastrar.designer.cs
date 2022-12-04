@@ -32,7 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@
             this.rb2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,16 +78,6 @@
             this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 1;
             this.label4.Text = "Email";
-            // 
-            // txtNome
-            // 
-            this.txtNome.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtNome.Location = new System.Drawing.Point(227, 224);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.ReadOnly = true;
-            this.txtNome.Size = new System.Drawing.Size(381, 20);
-            this.txtNome.TabIndex = 1;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // txtSenha
             // 
@@ -193,6 +183,13 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(227, 224);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(381, 20);
+            this.txtNome.TabIndex = 1;
+            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,9 +202,9 @@
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -230,7 +227,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnCadastrar;
@@ -240,5 +236,6 @@
         private System.Windows.Forms.RadioButton rb2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtNome;
     }
 }
