@@ -293,6 +293,7 @@ namespace MiamoDesktop
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.Cyan;
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -410,7 +411,7 @@ namespace MiamoDesktop
 
         private void abrirMiamoUIToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://ge.globo.com/");
+            System.Diagnostics.Process.Start("https://miamoui.azurewebsites.net");
         }
     }
 }

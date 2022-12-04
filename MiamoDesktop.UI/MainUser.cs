@@ -26,6 +26,7 @@ namespace MiamoDesktop
         private ToolStripMenuItem relatórioToolStripMenuItem;
         private ToolStripMenuItem toolStripMenuItem1;
         private MenuStrip menuStrip1;
+        private ToolStripMenuItem abrirSiteMiamoToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
 
         public MainUser()
@@ -45,6 +46,7 @@ namespace MiamoDesktop
             this.lblSession = new System.Windows.Forms.ToolStripLabel();
             this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirSiteMiamoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +63,7 @@ namespace MiamoDesktop
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Location = new System.Drawing.Point(0, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1453, 591);
+            this.panel1.Size = new System.Drawing.Size(1370, 614);
             this.panel1.TabIndex = 4;
             // 
             // toolStrip1
@@ -75,7 +77,7 @@ namespace MiamoDesktop
             this.lblSession});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1453, 37);
+            this.toolStrip1.Size = new System.Drawing.Size(1370, 37);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -126,15 +128,24 @@ namespace MiamoDesktop
             // 
             // utilitáriosToolStripMenuItem
             // 
+            this.utilitáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirSiteMiamoToolStripMenuItem});
             this.utilitáriosToolStripMenuItem.Name = "utilitáriosToolStripMenuItem";
             this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.utilitáriosToolStripMenuItem.Text = "&Utilitários";
             // 
+            // abrirSiteMiamoToolStripMenuItem
+            // 
+            this.abrirSiteMiamoToolStripMenuItem.Name = "abrirSiteMiamoToolStripMenuItem";
+            this.abrirSiteMiamoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.abrirSiteMiamoToolStripMenuItem.Text = "Abrir site Miamo";
+            this.abrirSiteMiamoToolStripMenuItem.Click += new System.EventHandler(this.abrirSiteMiamoToolStripMenuItem_Click);
+            // 
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
-            this.usuárioToolStripMenuItem.Text = "&Usuário";
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.usuárioToolStripMenuItem.Text = "&Exibir Relatórios";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
             // relatórioToolStripMenuItem
@@ -181,6 +192,7 @@ namespace MiamoDesktop
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainUser_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -200,7 +212,7 @@ namespace MiamoDesktop
 
         private void usuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Relatorio obj = new Relatorio();
+            Listar obj = new Listar();
             obj.ShowDialog();
         }
 
@@ -211,7 +223,7 @@ namespace MiamoDesktop
 
         private void Relatorio_Click(object sender, EventArgs e)
         {
-            Relatorio obj = new Relatorio();
+            Listar obj = new Listar();
             obj.ShowDialog();
         }
 
@@ -223,6 +235,11 @@ namespace MiamoDesktop
         private void lblSession_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void abrirSiteMiamoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://miamo.azurewebsites.net");
         }
     }
 }
