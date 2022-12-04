@@ -394,7 +394,7 @@
       <a href="https://pt-br.facebook.com/miamomodaintima/" target="blank"><img src="icone/facebook-new.png" alt="Facebook" width="45px" ></a>
     </div>
     <div>
-      <a href="https://www.instagram.com/miamo_longewear/" target="blank"><img src="icone/instagram-icone-noir.png" alt="Instagram" width="45px" ></a>
+      <a href="https://www.instagram.com/miamolongewear/" target="blank"><img src="icone/instagram-icone-noir.png" alt="Instagram" width="45px" ></a>
     </div>
     </aside>
 
